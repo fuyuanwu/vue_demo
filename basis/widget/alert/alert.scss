@@ -1,0 +1,44 @@
+.alert {
+    background-color: #000;
+    background:rgba(0, 0, 0, 0.9) none repeat scroll 0 0 !important;/*实现FF背景透明，文字不透明*/
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -khtml-opacity: 0.7;
+    -moz-opacity: 0.7;
+    border-radius: 4px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 260px;
+    min-height: 80px;
+    z-index: 100;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.8);
+    .alert_close {
+        display: inline-block;
+        margin-left: 10px;
+        cursor: pointer;
+        font-size: 28px;
+    }
+    .alert_title {
+        border-bottom: 1px solid #ccc;
+        line-height: 45px;
+        text-align: center;
+        background: #f3f3f3;
+    }
+    .alert_info{
+        padding-left: 40px;
+        padding-right: 28px;
+        line-height: 80px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .alert_btn_default {
+        display: block;
+        border-top: 1px solid #ccc;
+        line-height: 45px;
+        color: inherit;
+        text-align: center;
+    }
+}

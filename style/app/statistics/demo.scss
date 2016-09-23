@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../fragment/date_pick.scss";
+
+.statistics-head{
+    // margin: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    select{
+        height: 34px;
+        line-height: 34px;
+        width: 120px;
+        border-radius: 4px;
+    }
+    .start{
+        margin-left: 156px;
+    }
+    .end{
+        margin-left: 156px;
+    }
+}
+.statistics-title{
+    line-height: 100px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    a{
+        font-size: 14px;
+        color: #0e7fdf;
+        text-decoration: underline;
+        margin-left: 10px;
+    }
+}
+.statistics-charts{
+    background-color: #FAFAFA;
+    height: 470px;
+    text-align: center;
+    img{
+        margin-top: 60px;
+    }
+    .chart-box{
+        width: 700px;
+        height: 270px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.dept-select{
+    margin-top: 20px;
+    .cell{
+        display: inline-block;
+        height: 28px;
+        line-height: 28px;
+        border-radius: 4px;
+        padding: 0 10px;
+        background-color: #E5E8EB;
+        color: #666;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .cell-on{
+        background-color: #3D9CF2;
+        color: #fff;
+    }
+}

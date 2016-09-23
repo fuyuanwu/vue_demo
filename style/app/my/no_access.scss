@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../fragment/cards.scss";
+@import "../../fragment/layer.scss";
+.main {
+    min-height: 600px;
+}
+.remind {
+    margin: 190px auto 0;
+    box-sizing:border-box;
+    width: 440px;
+    height: 170px;
+    padding-left: 180px;
+    background: url('/images/app/remind_bg.png') no-repeat 0px center;
+    .rd-title {
+        padding: 30px 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: #545b62;
+    }
+    .rd-intro {
+        font-size: 12px;
+        line-height: 36px;
+        color: #424242;
+    }
+    .rd-link {
+        display: inline-block;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        color: #ffffff;
+        background: #46aaff;
+        border-radius: 5px;
+    }
+}

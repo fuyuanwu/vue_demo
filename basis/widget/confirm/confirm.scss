@@ -1,0 +1,49 @@
+.confirm {
+    width: 100%;
+    max-width: 360px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+
+    .confirm_close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        line-height: 12px;
+        cursor: pointer;
+    }
+    .confirm_wrap {
+        position: relative;
+        border-radius: 4px;
+        background: #fff;
+        overflow: hidden;
+    }
+    .confirm_title {
+        border-bottom: 1px solid #ccc;
+        line-height: 45px;
+        text-align: center;
+        background: #f3f3f3;
+    }
+    .confirm_info {
+        padding: 25px;
+    }
+    .confirm_btn_wrap {
+        border-top: 1px solid #ccc;
+        line-height: 45px;
+
+        a {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+            color: inherit;
+
+            &.confirm_btn_cancel {
+                border-right: 1px solid #ccc;
+            }
+            &.confirm_btn_success{
+                color: #e04054;
+            }
+        }
+    }
+}

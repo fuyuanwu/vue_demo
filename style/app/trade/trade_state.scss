@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../fragment/date_pick.scss";
+@import "../../fragment/layer.scss";
+@import "../../component/btn.scss";
+@import "../../../../../basis/widget/pickday/pickday.scss";
+@import "../../../../../basis/widget/shade/shade.scss";
+
+
+.details{
+    .head_bar{
+        margin: 10px 30px 10px 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .msg_wrap{
+        background: #FAFAFA;
+        padding: 0 30px;
+        margin-bottom: 30px;
+        margin-left: 14px;
+        div{
+            line-height: 50px;
+            border-bottom: 1px solid #eee;
+            .title{
+                font-weight: bold;
+                color: #707070;
+                text-align: right;
+                display: inline-block;
+                width: 100px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .table_wrap{
+        margin: 0 14px;
+        table{
+            width: 100%;
+        }
+        th{
+            background-color: #F7F7F7;
+            line-height: 40px;
+            padding: 0 34px;
+            color: #707070;
+        }
+        tbody{
+            td{
+                border-bottom: 1px solid #eee;
+                height: 50px;
+                padding: 0 34px;
+            }
+        }
+    }
+}
+
+.trade_wrap {
+    padding:170px 0 270px 0;
+    text-align: center;
+    .trade_widths {
+        margin:0 auto;
+        width: 300px;
+        text-align: left;
+    }
+    .trade_detail {
+        font-size: 14px;
+        color: #485056;
+        text-align: left;
+        line-height: 26px;
+        margin-left: 40px;
+        label{
+            display: inline-block;
+            width: 60px;
+            text-align: right;
+        }
+    }
+    .trade_status {
+        margin-bottom: 50px;
+        font-size: 24px;
+        color: #38424a;
+        margin-left: 40px;
+        i {
+            display: inline-block;
+            margin-right: 20px;
+            height: 40px;
+            width: 40px;
+            background: url("/images/app/my/trade_status.png") no-repeat;
+            vertical-align: -10px;
+       }
+       .t_s {
+            background-position: 0 0;
+       }
+       .t_d {
+            background-position: -46px 0;
+       }
+        .t_f{
+            background-position: -94px 0;
+        }
+    }
+    .finish_wrap .finish_btn {
+        @include _btn(178px,34px,#fff,#41a6fc,#41a6fc,3px,14px);
+        margin-top: 50px;
+        margin-left: 40px;
+        font-weight: bold;
+        &:hover {
+            background-color: #3e9efd;
+        }
+    }
+}
+

@@ -1,0 +1,254 @@
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../fragment/cards.scss";
+@import "../../fragment/layer.scss";
+@import "../../fragment/date_pick.scss";
+@import "../../fragment/agreement.scss";
+@import "../../../../../basis/widget/pickday/pickday.scss";
+@import "../../../../../basis/widget/alert/alert.scss";
+
+@mixin transparent($value: 0) {
+    filter: alpha(opacity=#{$value * 100});
+    -khtml-opacity: $value;
+    -moz-opacity: $value;
+    opacity: $value;
+}
+
+.imgForm{
+    position: absolute;
+    top: 220px;
+}
+.imgForm_2 {
+    top: 580px;
+}
+.img_placeHolder{
+    height: 170px;
+}
+.step2_placeHolder {
+    height: 130px;
+}
+input {
+    font-size:14px;
+    // padding: 2px 5px;
+}
+.reg-item .reg-label {
+    float: left;
+    margin-left: -105px;
+    width: 100px;
+    height: 42px;
+    line-height: 42px;
+    color: #666666;
+    font-size: 14px;
+    text-align: right;
+    *display: inline;
+    *zoom: 1;
+}
+.reg-item .reg-label {
+    width: 150px;
+    color: #383838;
+    margin-right: 10px;
+}
+.reg-item span.inputed_area {
+    line-height: 42px;
+    font-size: 14px;
+}
+.line {
+    margin: 0px auto 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 0px;
+    height: 0px;
+    border-bottom: 1px solid #cccccc;
+}
+.reg-form {
+    margin-top: 20px;
+    position: relative;
+    .title {
+        margin: 0px auto 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 10px 0px;
+        font-size: 18px;
+        color: #383838;
+        border-bottom: 1px solid #cccccc;
+    }
+}
+.tips {
+    color: #888;
+    padding-left: 238px;
+    .multi-line {
+        display: inline-block;
+    }
+}
+.upload-img {
+    width:78px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border:1px solid #d1d6da;
+    height:35px;
+    line-height: 35px;
+    font-size: 15px;
+    color: #5f798b;
+    background-color: #f0f4f5;
+    text-decoration:none;
+    cursor:pointer;
+}
+.file_img {
+    width:128px;
+    height:45px;
+    background:#333;
+    margin: 0 auto;
+    top:0;
+    position: absolute;
+    right/*\**/:0px\9;
+    margin-right/*\**/:0px\9;
+    width/*\**/:10px\9;
+    opacity:0;
+    filter:alpha(opacity=0);
+    z-index:2;
+}
+.lable_file {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+.J-submitall {
+    padding: 20px 0px 20px 240px;
+}
+#J-select_bank {
+    margin:25px 180px 0px 55px;
+    position: relative;
+    width: 500px;
+    height: 280px;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+
+.downimg {
+    width: 120px;
+    height: 40px;
+    vertical-align: -15px;
+    border: none;
+    margin-left: 10px;
+}
+.info_area {
+    width: 800px;
+    display: block;
+    // overflow-x: hidden;
+    max-height: 200px;
+}
+#J-summary {
+    width: 280px;
+    height: 130px;
+    resize: vertical;
+    font-size: 12px;
+    padding: 10px;
+}
+#J-province-hint {
+    width: 200px;
+    position: absolute;
+    left: 0px;
+    top: 33px;
+}
+#J-city-hint {
+    width: 200px;
+    right: 0;
+}
+#J-code-hint {
+    position: relative;
+    top: -428px;
+    left: 740px;
+}
+input[type="submit"] {
+    display: inline-block;
+    margin: 0 12px;
+    position: relative;
+    z-index: 100;
+}
+.reg-form .reg-item {
+    margin-bottom: 16px;
+    *margin-bottom: 14px;
+}
+.reg-item {
+    position: relative;
+    padding-left: 183px;
+    font-size: 0;
+    *zoom: 1;
+    *vertical-align: bottom;
+}
+.reg-item .i-text {
+    vertical-align: middle;
+    *zoom: 1;
+    background: none;
+    width: 258px;
+    height: 38px;
+    border: 1px solid #c5c5c5;
+    text-indent: 10px;
+}
+.bank_bind {
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+.bank_layer{
+    position: relative;
+    height: 280px;
+    li{
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .bank_logo{
+        border: 1px solid #eee;
+        vertical-align: -9px;
+        margin-left: 5px;
+    }
+}
+.J-select {
+    width: 127px;
+    height: 38px;
+    background-color: #fff;
+    border:1px solid #ccc;
+    margin-right: 5px;
+}
+
+select {
+    font-size: 14px;
+}
+.input_hint {
+    position: relative;
+    font-size: 14px;
+    margin-left: 20px;
+    top: 4px;
+}
+#J_summary_hint{
+    position: relative;
+    top: -200px;
+    left: 550px;
+}
+.agreement{
+    margin-bottom: 10px;
+}
+.ag_view{
+    float: right;
+    margin-top: -50px;
+    margin-right: 20px;
+}
+.img_back{
+    display: inline-block;
+    height: 40px;
+}
+.c-tips{
+    margin-left: 240px;
+    margin-top: -10px;
+    color: #999;
+}
+
+
+
+
+
+

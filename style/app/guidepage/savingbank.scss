@@ -1,0 +1,474 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/header_footer.scss";
+@import "../../../../../basis/widget/slides/slides.scss";
+
+body{
+    background-color: #fff;
+}
+.banner {
+    width: 100%;
+    height: 464px;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+        .J-tl,.J-tr {
+            transform: translate(0,0);
+            -ms-transform: translate(0,0);
+            -webkit-transform: translate(0,0);
+            -o-transform: translate(0,0);
+            -moz-transform: translate(0,0);
+        }
+    }
+    .J-tl {
+        display: block;
+        position: absolute;
+        top: 150px;
+        width: 43px;
+        height: 93px;
+        background: url("/images/app/banner/turn-left.png") no-repeat;
+        z-index: 25;
+        transition: transform .6s;
+        -webkit-transition: -webkit-transform .6s;
+        -ms-transition: -ms-transform .6s;
+        left: 0;
+        background-position: 0 0;
+        transform: translate(-43px,0);
+        -ms-transform: translate(-43px,0);
+        -webkit-transform: translate(-43px,0);
+        -o-transform: translate(-43px,0);
+        -moz-transform: translate(-43px,0);
+        cursor: pointer;
+    }
+    .J-tr {
+        display: block;
+        position: absolute;
+        top: 150px;
+        width: 43px;
+        height: 93px;
+        background: url("/images/app/banner/turn-right.png") no-repeat;
+        z-index: 25;
+        transition: transform .6s;
+        -webkit-transition: -webkit-transform .6s;
+        -ms-transition: -ms-transform .6s;
+        right: 0;
+        background-position: -43px 0;
+        transform: translate(43px,0);
+        -ms-transform: translate(43px,0);
+        -webkit-transform: translate(43px,0);
+        -o-transform: translate(43px,0);
+        -moz-transform: translate(43px,0);
+        cursor: pointer;
+    }
+}
+.slides {
+    width: 1920px;
+    height: 464px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+}
+.slidesjs-pagination {
+    margin-left: -50px;
+}
+.featureBlock{
+    position: relative;
+    width: 100%;
+    height: 715px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding-top: 40px;
+
+}
+.securityBlock{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding-top: 40px;
+    h2{
+        font-size: 30px;
+        color: #434b53;
+        font-weight: 700;
+    }
+    .wrap{
+        width: 980px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.bold{
+    font-size: 30px;
+    font-weight: 700;
+}
+.sub{
+    color: #8c8c8c;
+}
+
+.partner{
+    padding: 70px 0;
+    text-align: center;
+    height: 455px;
+    h2{
+        color: #383838;
+        font-size: 30px;
+        line-height: 80px;
+        font-weight: 200;
+        font-family: bold;
+        margin-bottom: 100px;
+    }
+    li{
+        float: left;
+        width: 262px;
+        height: 64px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.product-list {
+    padding:68px 0px 0px 0px;
+    width: 980px;
+    margin: 0 auto;
+    .product-li {
+        float: left;
+        width:228px;
+        height: 375px;
+        padding:30px 10px 0;
+        margin-left:55px;
+        border-top: 5px solid #1b82d5;
+        border-radius: 5px;
+        // box-sizing: border-box;
+        text-align: center;
+        img{
+            border-radius: 100%;
+        }
+        h4{
+            font-size: 28px;
+            text-align: center;
+            color: #333333;
+            line-height: 70px;
+        }
+        span {
+            display: inline-block;
+            font-size: 18px;
+            color: #1b82d5;
+            padding: 7px 20px;
+            border-radius: 20px;
+            border:1px solid #1b82d5;
+        }
+        p {
+            line-height: 22px;
+            font-size: 16px;
+            color: #666666;
+            margin-top: 22px;
+            text-align: justify;
+        }
+        &:hover{
+            background: #1b82d5;
+            h4{
+                color: #ffffff;
+            }
+            span {
+                color: #fff;
+                border-color:#fff;
+            }
+            p {
+                color: #fff;
+            }
+        }
+    }
+}
+.serviceBlock {
+    background: #F0F0F0;
+}
+.functionBlock {
+    background-color: #FFFFFF;
+}
+.safetyBlock {
+    height: 718px;
+    p {
+         color: #fff;
+        a{
+            color: #fff;
+        }
+    }
+}
+.header_fixed {
+    position: fixed;
+    z-index: 100;
+    width: 100% !important;
+    box-shadow: 2px 2px 2px #ccc;
+     background: #fff;
+}
+
+.line {
+    position: absolute;
+    height: 2px;
+    background: #3592e0;
+    top: 66px;
+    left:254px;
+    z-index: 1001;
+    width: 100px;
+}
+
+.wrapper{
+    padding: 70px 0;
+    width: 100%;
+    h2{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .saving_ul{
+        margin: 30px auto;
+        width: 75%;
+        height: 410px;
+        li{
+            float: left;
+            width: 32%;
+            text-align: center;
+            color: #383838;
+            border: 1px solid #61B1FF;
+            height: 340px;
+            margin-bottom: 70px;
+            .title{
+                margin-top: 20px;
+                font-size: 26px;
+                line-height: 40px;
+            }
+            .sub{
+                font-size: 14px;
+                color: #7f7f7f;
+            }
+        }
+        .mid_mg{
+            margin: 0 1.5%;
+        }
+    }
+    .salary_ul{
+        margin: 30px auto;
+        width: 75%;
+        height: 270px;
+        li{
+            float: left;
+            width: 33%;
+            text-align: center;
+            color: #383838;
+            p{
+                color: #353940;
+                font-size: 18px;
+                margin-top: 60px;
+            }
+        }
+    }
+    .security_ul{
+        width: 980px;
+        height: 470px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .partner_ul{
+        margin: 30px auto;
+        height: 188px;
+        // width: 100%;
+        li{
+            float: left;
+            width: 23%;
+            height: 64px;
+            margin-right: 2%;
+            margin-bottom: 30px;
+            text-align: center;
+            img{
+                // width: 100%;
+                // height: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+    @media screen and (min-width: 960px) and (max-width: 1280px) {
+        .partner_ul{
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: 1280px) and (max-width: 1500px) {
+        .partner_ul{
+            width: 90%;
+        }
+    }
+    @media screen and (min-width: 1500px) {
+        .partner_ul{
+            width: 73%;
+        }
+    }
+
+}
+
+
+.sb_height {
+    height: 480px;
+    background: #ffffff;
+}
+
+.sm_height {
+    // height:500px;
+    background: #F2F4F5;
+    // border-bottom: 1px solid #e8e8e8;
+    // border-top: 1px solid #e8e8e8;
+}
+.sf_height {
+    height: 650px;
+     background: #ffffff;
+}
+.pb_bg {
+    background: #f7f7f7;
+}
+// .nav_lt {
+//     margin-left: 50px;
+// }
+.fw_200 {
+    font-weight: 200;
+}
+
+.savingbank_banner {
+    position: relative;
+    height: 385px;
+    background: url("/images/app/guidepage/saving_bank.png") no-repeat center center;
+    background-size:cover;
+}
+.w_960 {
+    width: 960px;
+    margin: 0 auto;
+}
+.sk_banner-text {
+    color: #fff;
+    h3 {
+        padding: 60px 0 40px 0;
+        font-size: 36px;
+    }
+    p {
+        line-height: 30px;
+        font-size:18px;
+    }
+}
+
+.im_use {
+    display: inline-block;
+    margin-top: 40px;
+    width: 230px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    color: #fff !important;
+    background: #007CE2;
+    font-size: 18px;
+    border-radius: 5px;
+     @include _transition (background-color,0.5s);
+}
+.im_use:hover {
+    background-color: #41a6fc;
+}
+.savingbank-list {
+    height: 410px;
+    .sk-list-ul {
+        padding-top: 85px;
+    }
+    .sk-list-ul li {
+        display: inline-block;
+        width: 23%;
+        padding: 0 0.5%;
+        text-align: center;
+        h4 {
+            padding: 40px 0 30px 0;
+            font-size: 20px;
+            color: #212121;
+        }
+        p {
+            width: 212px;
+            margin: 0 auto;
+            line-height: 22px;
+            color: #8c8c8c;
+            font-size: 14px;
+        }
+    }
+}
+.sd-text {
+    width: 334px;
+    margin: 0 auto;
+    text-align: center;
+}
+.south_found {
+    height: 426px;
+    color: #fff;
+    background: url("/images/app/guidepage/south_found.png") no-repeat center center;
+    h4 {
+        padding-top: 108px;
+        font-size: 36px;
+        color: #fff;
+    }
+    p{
+        margin: 50px 0 16px 0;
+        font-size: 14px;
+         color: #fff;
+    }
+}
+.common_question {
+    height: 966px;
+    h3 {
+        padding: 80px 0 90px 0;
+        font-size: 36px;
+        color: #2b2f33;
+        text-align: center;
+    }
+}
+.line-box {
+    display: inline-block;
+}
+.cn-qn-pic {
+    height: 640px;
+    width: 40%;
+    background: url("/images/app/guidepage/cn_qn-bg.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.cn-qn-main {
+    margin-left:40px;
+    margin-left: 2%;
+    width: 663px;
+    width: 57.5%;
+    h4 {
+        margin-top: 5px;
+        padding-left: 66px;
+        height: 44px;
+        color: #2883d8;
+        background: url("/images/app/guidepage/cn_qn-q.png") no-repeat 0 center;
+        line-height: 44px;
+        font-size: 20px;
+    }
+    p {
+        margin: 10px 0 30px 64px;
+        position: relative;
+        font-size: 16px;
+        color: #4c596a;
+        line-height: 24px;
+        padding: 18px 20px;
+        background: #e9ebec;
+        border-radius: 5px;
+        i {
+            display: inline-block;
+            position: absolute;
+            width: 13px;
+            height: 15px;
+            background: url(/images/app/guidepage/cqg-sarrow.png) no-repeat center;
+            left: -13px;
+            top: 10px;
+        }
+    }
+}

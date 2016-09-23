@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../../../../basis/widget/alert/alert.scss";
+@import "../../../../../basis/widget/treeview/jquery.treeview.scss";
+
+.tree-side{
+    position: absolute;
+    background-color: #fff;
+    width: 260px;
+    border-radius: 4px;
+    @include prefix(box-shadow, 0 0 5px 1px rgba(0, 0, 0, 0.1));
+}
+.searchbar{
+    position: relative;
+    border-bottom: 1px solid #EEEEEE;
+    margin: 10px;
+}
+.searchbar__ipt{
+    width: 238px;
+    border: 1px solid #B9B9B9;
+    height: 34px;
+    line-height: 34px;
+    text-indent: 10px;
+    border-radius: 4px;
+}
+.icon-wrap{
+    width: 40px;
+    height: 36px;
+    background-color: #3B9CF2;
+    position: absolute;
+    right: 0;
+    margin-top: -36px;
+    border-radius: 0 4px 4px 0;
+}
+.tree-side__panel{
+    height: 600px;
+    width: 100%;
+}
+.tree-side__content{
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+}
+.tree-side__title{
+    line-height: 50px;
+    padding-left: 24px;
+    cursor: pointer;
+    &:hover{
+        color: #0e7fdf;
+        background-color: #F7F7F7;
+    }
+}
+.search-card{
+    margin: 10px 24px;
+    height: 640px;
+    p{
+        line-height: 30px;
+        cursor: pointer;
+        &:hover{
+            color: #0e7fdf;
+            background-color: #F7F7F7;
+        }
+    }
+}
+._unassigned{
+    padding-left: 24px;
+    li{
+        line-height: 40px;
+        cursor: pointer;
+        &:hover{
+            color: #0e7fdf;
+            background-color: #F7F7F7;
+        }
+    }
+}
+.tree-side__cell{
+    padding-left: 30px;
+    width: 100%;
+    // @include prefix(box-sizing,border-box);
+    li{
+        line-height: 40px;
+        cursor: pointer;
+    }
+}
+.hover-dept{
+    &:hover{
+        color: #0e7fdf;
+        background-color: #F7F7F7;
+    }
+}
+.border-bottom{
+    border-bottom: 1px solid #eee;
+}
+.treeview .expandable-hitarea {
+    margin-left: -4px;
+    margin-top: 18px;
+}
+.treeview .hitarea{
+    margin-left: -4px;
+    margin-top: 16px;
+}
+.mail-card{
+    position: absolute;
+    margin-left: 280px;
+    border-radius: 4px;
+    width: 70%;
+}
+.mail-card__mailto,
+.mail-card__subject,
+.mail-card__text{
+    @include prefix(box-shadow, 0 0 5px 1px rgba(0, 0, 0, 0.1));
+    min-height: 56px;
+    // line-height: 40px;
+    background-color: #fff;
+    padding-left: 14px;
+    border-radius: 4px;
+}
+.mailto-wrap,
+.mailto-cell,
+.mailto-ipt{
+    display: inline-block;
+}
+.mailto-cell{
+    color: #277dc9;
+    padding: 0 10px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #DCEEFD;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 4px;
+    margin-top: 8px;
+}
+.mailto-ipt{
+    border: 0;
+    margin: 20px 0;
+    // height: 56px;
+    // line-height: 56px;
+    width: 100%;
+    &:focus{
+        @include prefix(box-shadow, 0 0 0 0 rgba(0, 0, 0, 0));
+    }
+}
+.mail-card__subject{
+    margin-top: 10px;
+}
+.ipt-placeholder{
+    position: absolute;
+    display: inline-block;
+    // width: 86px;
+    padding:0 10px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 4px;
+    color: #999;
+    // background-color: #FED7D6;
+}
+.ipt-theme{
+    margin-top: 14px;
+    line-height: 30px;
+}
+.ipt-recipient{
+    margin-top: -10px;
+    line-height: 50px;
+}
+.mail-card__text{
+    height: 546px;
+    margin-top: 10px;
+    padding: 14px;
+}
+.mail-btnbar{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.mail-text{
+    width: 100%;
+    height: 490px;
+    resize: none;
+    border: 0;
+    font: 14px 'Helvetica Neue','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+}
+.js-btn__sned{
+    margin-right: 10px;
+}
+.no_releated{
+    text-align: center;
+    margin-top: 20px;
+}
+.richText{
+    height: 538px;
+}

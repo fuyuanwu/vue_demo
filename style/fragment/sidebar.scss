@@ -1,0 +1,40 @@
+.sidebar{
+    width: 210px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 6px;
+    height: 726px;
+    overflow: hidden;
+    .nav-ul{
+        border-bottom: 1px solid #DBDBDB;
+        padding: 8px 0;
+        .nav-item{
+            height: 38px;
+            padding-left: 30px;
+            line-height: 38px;
+            cursor: pointer;
+            color: #616161;
+            position: relative;
+            i{
+                margin-right: 10px;
+            }
+        }
+        .nav-item:hover{
+            background-color: #E8E9EA;
+            color: #333;
+        }
+        .nav-item-active{
+            color: #333;
+            background-color: #E8E9EA;
+        }
+        .bewaiting{
+            border-radius: 4px;
+            padding: 4px;
+            color: #fff;
+            font-size: 12px;
+            margin-left: 10px;
+            background-color: #B2C2D2;
+        }
+    }
+}

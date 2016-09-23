@@ -1,0 +1,28 @@
+.card-table{
+    width: 100%;
+    margin-top: 20px;
+    thead{
+        line-height: 40px;
+        color: #b9b9b9;
+        background-color: #F7F7F7;
+    }
+    td{
+        padding-left: 14px;
+    }
+}
+.card-tbody{
+    tr:hover{
+        background-color: #F2F6FA
+    }
+    td{
+        line-height: 64px;
+        border-bottom: 1px solid #EDEDED;
+    }
+}
+.card-select{
+    height: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+    width: 68px;
+    border-radius: 4px;
+}

@@ -1,0 +1,7 @@
+@mixin icon($width: 20, $height: 20) {
+    width: #{$width}px;
+    height: #{$height}px;
+    display: inline-block;
+    background: url(/images/app/cube_icon.png) no-repeat;
+    vertical-align: middle;
+}

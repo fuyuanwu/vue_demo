@@ -1,0 +1,59 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../fragment/date_pick.scss";
+@import "../../fragment/layer.scss";
+@import "../../component/btn.scss";
+@import "../../../../../basis/widget/pickday/pickday.scss";
+@import "../../../../../basis/widget/shade/shade.scss";
+
+
+.details{
+    .head_bar{
+        margin: 10px 30px 10px 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .msg_wrap{
+        background: #FAFAFA;
+        padding: 0 30px;
+        margin-bottom: 30px;
+        margin-left: 14px;
+        div{
+            line-height: 50px;
+            border-bottom: 1px solid #eee;
+            .title{
+                font-weight: bold;
+                color: #707070;
+                text-align: right;
+                display: inline-block;
+                width: 100px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .table_wrap{
+        margin: 0 14px;
+        margin-bottom: 30px;
+        table{
+            width: 100%;
+        }
+        th{
+            background-color: #F7F7F7;
+            line-height: 40px;
+            padding: 0 34px;
+            color: #707070;
+        }
+        tbody{
+            td{
+                border-bottom: 1px solid #eee;
+                height: 50px;
+                padding: 0 34px;
+            }
+        }
+    }
+}
+
+
+

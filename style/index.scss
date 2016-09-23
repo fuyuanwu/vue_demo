@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+.general{
+    padding: 10px;
+}
+.savingBlance{
+    border-right: 1px solid #e9e9e9;
+}
+.savingBlance, .salaryOverview{
+    width: 498px;
+    padding: 0 20px;
+    .head_bar{
+        height: 40px;
+        line-height: 40px;
+        .title{
+            color: #636363;
+            font-weight: bold;
+        }
+        select{
+            margin-left: 70px;
+            height: 24px;
+            width: 120px;
+            border: 1px solid #e9e9e9;
+        }
+    }
+}
+.deposit{
+    display: inline-block;
+    width: 90px;
+    height: 34px;
+    background-color: #f5f5f5;
+    color: #4b4b4b;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 34px;
+}
+.recharge{
+    display: inline-block;
+    width: 90px;
+    height: 34px;
+    background-color: #41a6fc;
+    color: #fff;
+    border: 1px solid #41a6fc;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 10px;
+}
+.figures{
+    margin-left: 45px;
+    margin-top: 40px;
+    .account_icon{
+        width: 65px;
+        height: 65px;
+        background: url('/images/app/cube_icon.png') no-repeat -367px -540px;
+    }
+    .account_word{
+        line-height: 32px;
+        width: 150px;
+        padding-left: 20px;
+    }
+
+    .benefit_icon{
+        width: 65px;
+        height: 65px;
+        background: url('/images/app/cube_icon.png') no-repeat -525px -540px;
+    }
+    .total_icon{
+        width: 65px;
+        height: 65px;
+        background: url('/images/app/cube_icon.png') no-repeat -10px -650px;
+    }
+    p{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .expenses_icon{
+        width: 65px;
+        height: 65px;
+        background: url('/images/app/cube_icon.png') no-repeat -448px -540px;
+    }
+    .funds_icon{
+        width: 65px;
+        height: 65px;
+        background: url('/images/app/cube_icon.png') no-repeat -10px -582px;
+    }
+    .insurance_icon{
+        width: 65px;
+        height: 65px;
+        background: url('/images/app/cube_icon.png') no-repeat -118px -650px;
+    }
+}
+
+
+.details{
+    border-top: 1px solid #e9e9e9;
+    padding: 10px 30px;
+    .head_bar{
+        height: 40px;
+        border-bottom: 1px solid #e9e9e9;
+        .item{
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .item_on{
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-bottom: 2px solid #f8b62b;
+            font-weight: bold;
+        }
+    }
+}
+.data_table{
+    width: 100%;
+    thead{
+        height: 40px;
+        line-height: 40px;
+        background-color: #f7f7f7;
+        color: #ababab;
+        th{
+            padding: 0 60px;
+        }
+    }
+    tbody{
+        td{
+            height: 66px;
+            line-height: 66px;
+            border-bottom: 1px solid #e9e9e9;
+            padding: 0 60px;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,75 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../component/btn.scss";
+@import "../../../../../basis/widget/alert/alert.scss";
+@import "../../../../../basis/widget/paginate/style.scss";
+
+.manage-card{
+    border: 1px solid #E6E6E6;
+    margin: 10px 10px 20px;
+    position: relative;
+    border-radius: 4px;
+    height: 156px;
+}
+.card-img{
+    position: absolute;
+    width: 280px;
+    height: 156px;
+    top: 0px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.card-right{
+    margin-left: 290px;
+    padding: 10px 0;
+}
+.card-head{
+    color: #0e7fdf;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+.card-bar{
+    line-height: 30px;
+    color: #999;
+    span{
+        color: #222;
+        margin-left: 14px;
+    }
+}
+.card-btn-bar{
+    position: absolute;
+    right: 20px;
+    margin-top: -40px;
+}
+.wel-card-tag__healthy{
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    background: url(/images/app/cube_icon.png) no-repeat;
+    background-position: -536px -4px;
+}
+.wel-card-tag__train{
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    background: url(/images/app/cube_icon.png) no-repeat;
+    background-position: -536px -66px;
+}
+.no-data{
+    margin-top: 100px;
+    height: 300px;
+    line-height: 50px;
+    text-align: center;
+    img{
+        vertical-align: middle;
+        margin: 0 auto;
+    }
+}

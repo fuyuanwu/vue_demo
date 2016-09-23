@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../component/btn.scss";
+@import "../../fragment/layer.scss";//弹框
+@import "../../../../../basis/widget/shade/shade.scss";//黑色半透明蒙版
+
+.order-card-head{
+    font-size: 20px;
+    color: #333;
+    margin-left: 10px;
+}
+.order-card{
+    border: 1px solid #E6E6E6;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+}
+.order-card-img{
+    position: absolute;
+    top: 20px;
+    width: 340px;
+    height: 190px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.order-card-contxt{
+    margin-left: 360px;
+    height: 190px;
+}
+.healthy_tag{
+    display: inline-block;
+    background-color: #32C26F;
+    color: #fff;
+    height: 18px;
+    width: 40px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 18px;
+    margin-left: 20px;
+}
+.trains_tag{
+    display: inline-block;
+    background-color: #FEC33B;
+    color: #fff;
+    height: 18px;
+    width: 40px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 18px;
+    margin-left: 20px;
+}
+.contxt-title{
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+}
+.order-card-txt{
+    color: #8b8b8b;
+    margin-top: 20px;
+    height: 76px;
+}
+.units-price{
+    line-height: 40px;
+    color: #333;
+}
+.people-amount{
+    margin-left: 40px;
+    color: #999;
+}
+.total-price{
+    color: #333;
+}
+.order-card-bot{
+    margin: 20px 10px 10px;
+    background-color: #FBF5EC;
+    border: 1px solid #F2E4D0;
+    line-height: 80px;
+    color: #cbae82;
+    text-align: center;
+}
+
+
+
+
+

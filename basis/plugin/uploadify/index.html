@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>UploadiFive Test</title>
+<script src="http://10.65.105.19:10000/uploadify/jquery.min.js" type="text/javascript"></script>
+<script src="http://10.65.105.19:10000/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="http://10.65.105.19:10000/uploadify/uploadify.css">
+<style type="text/css">
+body {
+	font: 13px Arial, Helvetica, Sans-serif;
+}
+</style>
+</head>
+
+<body>
+	<h1>Uploadify Demo</h1>
+	<form>
+		<div id="queue"></div>
+		<input id="file_upload" name="file_upload" type="file" multiple="true">
+	</form>
+
+	<script type="text/javascript">
+		$(function() {
+			$('#file_upload').uploadify({
+				'formData'     : {
+					'timestamp' : Date.parse(new Date()),
+					'token'     : Date.parse(new Date())
+				},
+				'swf'      : 'http://10.65.105.19:10000/uploadify/uploadify.swf',
+				'uploader' : 'http://10.65.105.19:10000/uploadify/uploadify.php'
+			});
+		});
+	</script>
+</body>
+</html>

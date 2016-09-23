@@ -1,0 +1,187 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../fragment/layer.scss";
+@import "../../component/btn.scss";
+@import "../../../../../basis/widget/shade/shade.scss";
+@import "../../../../../basis/widget/alert/alert.scss";
+@import "../../../../../basis/widget/paginate/style.scss";
+
+.calender_icon{
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url('/images/app/cube_icon.png') no-repeat -569px -427px;
+}
+
+.check{
+    .export_btn, .add_btn{
+        margin-left: 10px;
+    }
+    .newlyadd{
+        margin-left: 10px;
+    }
+    .review_btn{
+        i{
+            display: inline-block;
+            vertical-align: middle;
+            width: 22px;
+            height: 22px;
+            background: url('/images/app/cube_icon.png') no-repeat -558px -146px;
+        }
+    }
+    .return_btn{
+        @include _btn(58px,34px,#59B1FC,#fff,#59B1FC,4px,14px);
+    }
+    .cell{
+        margin-right: 40px;
+        display: inline-block;
+        float: left;
+    }
+    .table_wrap{
+        .records_table{
+            width: 100%;
+            margin-top: 16px;
+            thead{
+                height: 40px;
+                line-height: 40px;
+                background-color: #f7f7f7;
+                color: #ababab;
+                th{
+                    padding: 0 16px;
+                    white-space:nowrap;overflow:hidden;word-break:break-all;
+                }
+            }
+            tbody{
+                td{
+                    height: 66px;
+                    line-height: 66px;
+                    border-bottom: 1px solid #e9e9e9;
+                    padding: 0 16px;
+                    a{
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .release_status{
+                height: 24px;
+                line-height: 24px;
+                vertical-align: middle;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+.content_embed{
+    .title{
+        width: 100px;
+        display: inline-block;
+        text-align: right;
+        color: #AEAEAE;
+    }
+    textarea{
+        width: 310px;
+        height: 100px;
+        border: 1px solid #eee;
+        background-color: #FAFAFA;
+    }
+}
+.list_form{
+    width: 280px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.search_input,.list_input{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    text-indent: 10px;
+}
+.search_icon{
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 0 4px 4px 0;
+    width: 40px;
+    height: 30px;
+    background: #59B1FC url('/images/app/cube_icon.png') no-repeat -514px -141px;
+    position: relative;
+    left: -44px;
+    top: -1px;
+    cursor: pointer;
+}
+.list_search{
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 0 4px 4px 0;
+    width: 40px;
+    height: 32px;
+    background: #59B1FC url('/images/app/cube_icon.png') no-repeat -514px -141px;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
+.check_wrap{
+    width: 400px;
+    margin: 0 auto;
+    input{
+        margin-left: 50px;
+        margin-right: 6px;
+    }
+    span{
+        display: inline-block;
+    }
+    .name{
+        margin-left: 10px;
+    }
+    .tel{
+        width: 100px;
+        float: right;
+    }
+}
+.memo_hint{
+    left: 160px;
+    bottom: 70px;
+}
+.export_hint{
+    position: absolute;
+    left: 150px;
+    margin-top: 40px;
+    color: #f23737;
+}
+.add_hint{
+    left: 150px;
+}
+.send_sms{
+    height: 40px;
+    margin-left: 10px;
+    width: 100px;
+    color: #4381b5;
+    text-align: center;
+    display: inline-block;
+    line-height: 40px;
+    background-color: #E5F3FF;
+    border: none;
+    cursor: pointer;
+}
+.purpose span {
+  display: inline-block;
+  width: 130px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+.export_embed{
+    margin: 20px auto;
+    width: 350px;
+    height: 80px;
+    p{
+        line-height: 40px;
+    }
+}

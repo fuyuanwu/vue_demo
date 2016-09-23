@@ -1,0 +1,330 @@
+@charset "utf-8";
+@import "../pub/normalize.scss";
+@import "../pub/layout.scss";
+@import "../component/media.scss";
+@import "../component/btn.scss";
+@import "../component/classes.scss";
+@import "../app/icon/icon.scss";
+@import "../../basis/widget/shade/shade.scss";
+@import "../fragment/layer.scss";
+
+body {
+    background-color: #f5f5f5;
+    font-size: 14px;
+    margin: 0;
+    color: #54595c;
+     -webkit-font-smoothing: antialiased;
+     font-family: 'Helvetica Neue','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+}
+@mixin _transition ($prop,$times){
+    @include prefix(transition,$prop $times);
+    // transition: $prop $times ease-in-out;
+    // -moz-transition: $prop $times ease-in-out;
+    // -webkit-transition: $prop $times ease-in-out;
+    // -o-transition: $prop $times ease-in-out;
+}
+input,select,textarea{
+    font-family: 'Helvetica Neue','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+    box-shadow: none;
+}
+.ipt-focus{
+    &:focus{
+        @include _transition(box-shadow,0.35s);
+        // border: 1px solid #349af5;
+        box-shadow: 0 0 4px 2px rgba(52,154,245,.5);
+    }
+}
+/* 清除下拉选择框默认样式 */
+select{
+      border: solid 1px #C5C5C5;
+      appearance:none;
+      -moz-appearance:none;
+      -webkit-appearance:none;
+      // background-image: url("/images/app/select_icon.png") no-repeat scroll right center transparent;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAGCAYAAAGA6U8XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2M2NmNDdjMy01YjVmLTQ1NTctYTM3OC02MTc2MDg1OThhYjAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENGRUUwRTMwMzdGMTFFNjgwNUJBQTVCRjU0QTJGQjIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENGRUUwRTIwMzdGMTFFNjgwNUJBQTVCRjU0QTJGQjIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZTRkYTFiMWUtNmJhNC00YzkyLWFjN2EtNjRlOWU4MjA3NGYwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjYzY2Y0N2MzLTViNWYtNDU1Ny1hMzc4LTYxNzYwODU5OGFiMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pt803bsAAACcSURBVHjaYpw2bdphBgaGeIAAYgAyGAACiBFEAAFIxAsggECch0CGPBD/Z4IxgJgRIICQlckBsSMQ3wViPoAAAkmAVCgB8X0GCAAZ8QiknQ+I7wGxIkwQiG1BEp+RJMGCIG0AAQYyihdIbwNiG6iEA5KxICv2Q+0/AnIuzCRbqGmPoCY+hOK7UDE+qJrPLAwIANMIsxEEdKDicAAAhWwtZRMEEk8AAAAASUVORK5CYII=");
+      background-repeat: no-repeat;
+      background-position: 95% center;
+      padding-right: 18px;
+      padding-left: 6px;
+      outline: none;
+      border-radius: 0;
+}
+/* 清除IE下默认选择框样式 */
+select::-ms-expand { display: none; }
+/* button loading */
+.btn-loading{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background: url('/images/app/btn-loading.gif') no-repeat center;
+}
+.loading-bar{
+    width: 180px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    margin: 0 auto;
+    img{
+        display: inline-block;
+    }
+}
+/* 链接颜色 */
+.link, .blue{
+    color: #41a6fc;
+}
+/* 输入框报错border */
+.error{
+    border-color: #F99191;
+}
+/* 必填输入框*字 */
+.input_need{
+    color: #f23737;
+}
+/* 字体样式贾村 */
+.bold{
+    font-weight: bold;
+}
+.line50{
+    line-height: 50px;
+}
+.light_gray{
+    color:#7e7e7e;
+}
+.font40{
+    font-size: 40px;
+}
+.font30{
+    font-size: 30px;
+}
+.font28{
+    font-size: 28px;
+}
+.font24{
+    font-size: 24px;
+}
+.font20{
+    font-size: 20px;
+}
+.font18{
+    font-size: 18px;
+}
+.font16{
+    font-size: 16px;
+}
+.font12{
+    font-size: 12px;
+}
+.txt_right{
+    text-align: right;
+}
+.txt_center{
+    text-align: center;
+}
+.mgl30{
+    margin-left: 30px;
+}
+.mgl20{
+    margin-left: 20px;
+}
+.mgl10{
+    margin-left: 10px;
+}
+.pos_re{
+    position: relative;
+}
+.hide{
+    display: none;
+}
+.grid-1180 {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+.err_msg{
+    display: none;
+    color: #f23737;
+}
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
+}
+.icon{
+    display: block;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+.mark{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+/* 清除浮动 */
+.clearfix{
+    &::after{
+        display: block;
+        overflow: hidden;
+        clear: both;
+        height: 0;
+        content: "\0020";
+    }
+}
+.container, html {
+    background-color: #f1f1f1;
+}
+.container{
+    position: relative;
+}
+.main{
+    position: absolute;
+    // top: 0;
+    left: 210px;
+    // overflow: hidden;
+    margin-top: 20px;
+    margin-left: 24px;
+}
+.general{
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+.red{
+    color: #f23737;
+}
+.orange{
+    color: #f18a44;
+}
+.normal_color{
+    color: #495661;
+}
+.cell_display{
+    display: table-cell;
+    vertical-align: middle;
+}
+.crumbs{
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: #9c9c9c;
+    span{
+        color: #6c6c6c;
+    }
+}
+.btn_bar{
+    width: 100%;
+    text-align: center;
+    // line-height: 90px;
+    margin-top: 30px;
+}
+.small_green_icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url('/images/app/cube_icon.png') no-repeat -166px -426px;
+}
+.missing_icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    background: url('/images/app/cube_icon.png') no-repeat -452px -426px;
+}
+.select_icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 10px;
+    background: url('/images/app/cube_icon.png') no-repeat -554px -185px;
+}
+.user_icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 33px;
+    height: 33px;
+    background: url('/images/app/cube_icon.png') no-repeat -547px -141px;
+}
+.input_hint{
+    position: absolute;
+    right: 0;
+    line-height: 30px;
+    color: #f23737;
+    z-index: 10;
+}
+.bg_fff {
+    background: #ffffff;
+}
+.wexin_icon{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url('/images/app/cube_icon.png') -132px -428px;
+    vertical-align: middle;
+}
+.white_arrow_icon{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url('/images/app/cube_icon.png') -549px -180px;
+    vertical-align: middle;
+}
+//客服
+.customer_service{
+    position: fixed;
+    right: 1%;
+    top: 60%;
+    z-index: 10;
+    display: block;
+    width: 50px;
+    text-align: center;
+    height: 120px;
+    a{
+        text-align: center;
+        background-color: #fff;
+        width: 50px;
+        padding: 8px 4px;
+        height: 50px;
+        display: inline-block;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+        color: #383838;
+        font-size: 12px;
+        vertical-align: middle;
+        margin-top: 10px;
+        box-sizing:content-box !important;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+
+}
+.question_mark{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url('/images/app/cube_icon.png') -524px -236px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.success_alert_icon{
+    width: 50px;
+    height: 36px;
+    display: inline-block;
+    background: url('/images/app/cube_icon.png') -195px -177px;
+    vertical-align: middle;
+}
+.warn-wrap{
+    background-color: #FFFDC8;
+    color: #444;
+    width: 600px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}

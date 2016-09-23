@@ -1,0 +1,94 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../component/btn.scss";
+@import "../../component/table.scss";
+@import "../../../../../basis/widget/alert/alert.scss";
+@import "../../../../../basis/widget/paginate/style.scss";
+
+.general{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+.search-bar__input{
+    width: 220px;
+    height: 30px;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    text-indent: 10px;
+}
+.select-container{
+    padding: 20px;
+    position: absolute;
+    width: 70%;
+    height: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+.js-filter-res{
+    line-height: 32px;
+}
+.select-res{
+    width: 25%;
+    padding: 20px 0;
+    margin-left: 75%;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    height: 800px;
+    position: relative;
+}
+.select-remain{
+    margin-left: 20px;
+    color: #333;
+}
+.remain-amount{
+    color: #0e7fdf;
+    font-size: 24px;
+}
+.select-txt{
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: #F8F8F8;
+    color: #bebebe;
+}
+.select-staff{
+    margin: 10px;
+    position: relative;
+    ul{
+        height: 670px;
+        overflow: hidden;
+        overflow-y:scroll;
+    }
+}
+.staff-cell{
+    line-height: 40px;
+    color: #333;
+    padding: 0 10px;
+    cursor: pointer;
+    position: relative;
+    &:hover{
+        background-color: #EDF5FD;
+    }
+}
+.close-character{
+    color: #E74E53;
+    position: absolute;
+    right: 30px;
+}
+.select-btn-bar{
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+
+
+
+
+
+

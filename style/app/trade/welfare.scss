@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../component/btn.scss";
+
+.wel-card__head{
+    font-size: 18px;
+    color: #b9b9b9;
+    line-height: 36px;
+}
+.head{
+    margin: 10px 20px 0;
+}
+.wel-card{
+    margin: 20px 20px 30px;
+    position: relative;
+    height: 220px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    &:hover{
+        @include _transition(box-shadow,0.35s);
+        box-shadow: 1px 1px 16px 0 rgba(0, 0, 0, 0.1);
+    }
+}
+.wel-card-txt{
+    margin-left: 380px;
+}
+.wel-card-img{
+    position: absolute;
+    height: 220px;
+    width: 360px;
+    top: 0;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.wel-card-tag__healthy{
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    background: url(/images/app/cube_icon.png) no-repeat;
+    background-position: -536px 0;
+}
+.wel-card-price{
+    color: #7E8284
+}
+.wel-card-tag__train{
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    background: url(/images/app/cube_icon.png) no-repeat;
+    background-position: -536px -56px;
+}
+.wel-card-h2{
+    font-size: 20px;
+    color: #1e1e1e;
+    margin-top: 20px;
+}
+.txt-paragraph{
+    height: 60px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.js-buy{
+    margin-right: 20px;
+}
+.preferential{
+    display: inline-block;
+    padding: 0 6px;
+    background-color: #F9747A;
+    color: #fff;
+    margin-left: 10px;
+}

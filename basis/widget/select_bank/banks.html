@@ -1,0 +1,33 @@
+{% if nav %}
+<div class="select_banks_nav cf">
+{% for n in nav %}
+    <span class="select_banks_nav-item" data-type="{{ n.type }}" data-apick="{{ n.autoPick }}">{{ n.name }}</span>
+{% endfor %}
+</div>
+{% endif %}
+<div class="mod_banks">
+    <div class="mod_banks_sub">
+        {# <p class="rec_banks">推荐使用</p> #}
+        <ul class="bank_list cf" id="{{ rid }}">
+            {% if weiqianbaoAsOther %}
+            <li class="J-select_bank_cards bank_list-li-withlimit active" data-code="weiqianbao" data-name="微钱包" data-type="1"><img class="bank_logo" src="{{cdnUrl}}/img/banks/weiqianbao.gif"></li>
+            {% else %}
+            {% for bank in banks %}
+            <li class="J-select_bank_cards{% if nav %} dn{% endif %}{% if needLimit %} bank_list-li-withlimit{% endif %}" data-code="{{ bank.code }}" data-name="{{ bank.name }}" data-type="{{ bank.type }}">{% if bank.code != 'weiqianbao' and bank.isSgs != 0 %}<span class="b_l-sgs">推荐</span>{% endif %}<img class="bank_logo" src="{{cdnUrl}}/img/banks/{{ bank.code }}.gif" />{% if bank.needLimit %}<a href="javascript: void 0;" class="J-check_quota" data-code="{{ bank.code }}"><div class="bubble_layer"></div>查看限额</a>{% endif %}</li>
+            {% endfor %}
+            {% endif %}
+        </ul>
+        {% if weiqianbaoAsOther %}
+        <div class="tips_important"><i class="icon-yi"></i> 只能同时绑定一张银行卡，您需要删除已绑卡后才能绑定其它银行卡</div>
+        {% endif %}
+        {% if hasWeiqianbao %}<p class="quota"><i class="icon-yi"></i> 其他银行请选择 微钱包-新浪官方支付，支持更多银行</p>{% endif %}
+
+        {% if needBack %}
+        <a href="javascript: void 0;" class="J-back_call_back">返回</a>
+        {% endif %}
+        {# <div class="more"><span class="Brackets"></span>更多</div> #}
+        {% if debitOnly %}
+        <div class="debit_only dn"><i class="icon-yi"></i> 仅支持储蓄卡</div>
+        {% endif %}
+    </div>
+</div>

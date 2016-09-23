@@ -1,0 +1,78 @@
+//date_minpicker
+.date_box{
+    height: 140px;
+    width: 120px;
+    border: 1px solid #ccc;
+    z-index: 10000;
+}
+.date_top {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #EDF3F9;
+    position: relative;
+    color: #000;
+    span {
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .prev,.next {
+        position: absolute;
+        font-size: 18px;
+        display: inline-block;
+        width: 20px;
+        text-align: center;
+        cursor:pointer;
+    }
+     .prev{
+        left: 10px;
+     }
+    .next {
+        right: 10px;
+    }
+}
+.date_list {
+    width: 100%;
+    background: #fff;
+    display: none;
+    li {
+        display: inline-block;
+        width: 25%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color:#ccc;
+        font-size: 11px;
+
+    }
+    .on_click {
+        cursor: pointer;
+        color:#666;
+        font-weight: 700;
+    }
+}
+.date_list_index {
+    display: block;
+}
+.c_blue {
+    background: #28A8FF;
+    color: #fff !important;
+    // border-radius: 2px;
+}
+.ch_blue {
+    background: #28A8FF;
+    color: #fff !important;
+    // border-radius: 2px;
+}
+.on_click {
+    font-weight: 700;
+}
+.date_top {
+    display: none;
+}
+.date_top_index {
+    display: block;
+}
+.cursor{
+    cursor: pointer;
+}

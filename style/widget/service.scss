@@ -1,0 +1,39 @@
+.customer_service{
+
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 50px !important;
+    height: 50px !important;
+    padding: 8px 4px;
+    text-align: center;
+    a{
+        box-sizing:content-box !important;
+        color: #383838;
+        font-size: 12px;
+        &:hover {
+            text-decoration: none !important;
+        }
+    }
+}
+.questionnaire_service{
+    position: fixed;
+    right: 0;
+    top: 30%;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 8px 4px;
+    text-align: center;
+    a{
+        color: #383838;
+        font-size: 12px;
+    }
+}

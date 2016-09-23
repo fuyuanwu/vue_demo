@@ -1,0 +1,106 @@
+@import "../../pub/main.scss";
+@import "../../fragment/header_footer.scss";
+
+.banner{
+    width: 100%;
+    .wrap_inner{
+        width: 1920;
+        height: 386px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .s_text{
+            color: #fff;
+            font-size: 36px;
+            position: absolute;
+            top: 100px;
+            left: 50%;
+        }
+    }
+}
+.line-box {
+    display: inline-block;
+}
+.mb-li-pic {
+    width: 40%;
+    vertical-align: top
+}
+.mb-li-con {
+    width: 55%;
+    .mbcn-title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #151515;
+        line-height: 44px;
+    }
+    dd {
+        font-size: 16px;
+        color: #494848;
+        line-height: 24px;
+        margin-bottom: 8px;
+        padding-left: 24px;
+        background: url("/images/app/security/round_point.png") no-repeat 5px 8px;
+    }
+}
+.main-box {
+    padding-bottom: 110px;
+}
+.main-box .mb-li {
+    padding-top: 100px;
+}
+.w_960 {
+    width: 960px;
+    margin: 0 auto;
+}
+.mb-li-l .mb-li-con {
+    margin-left: 2%;
+}
+.mb-li-r .mb-li-con {
+    margin-right: 2%;
+}
+.south_found {
+    height: 426px;
+    color: #fff;
+    background: url("/images/app/guidepage/black_2bar.png") no-repeat center center;
+    background-size: cover;
+    h4 {
+        padding-top: 108px;
+        font-size: 36px;
+        color: #fff;
+    }
+    p{
+        margin: 50px 0 16px 0;
+        font-size: 14px;
+         color: #fff;
+    }
+}
+.sd-text {
+    width: 730px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.im_use {
+    display: inline-block;
+    margin-top: 60px;
+    width: 230px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    color: #fff !important;
+    background: #007CE2;
+    font-size: 18px;
+    border-radius: 5px;
+     @include _transition(background,0.5s);
+}
+.im_use:hover {
+    background: #41a6fc;
+}
+.banner .wrap_inner {
+    background: url("/images/app/security/security_ban.png") no-repeat center center;
+    background-size: cover;
+}

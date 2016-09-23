@@ -1,0 +1,290 @@
+@charset "utf-8";
+@import "../component/btn.scss";
+@import "../pub/main.scss";
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+    .header_in{
+        width: 980px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1280px){
+    .header_in{
+        width: 1180px;
+        margin: 0 auto;
+    }
+}
+.trans_header{
+    background-color: transparent;
+    color: #fff;
+    height: 90px;
+    line-height: 90px;
+    .register_btn{
+        @include _btn(94px,34px,rgba(255,255,255,0.8),transparent,#fff,4px,14px);
+        margin-top: 27px;
+        margin-right: 10px;
+        @include _transition (color,0.5s);
+        &:hover{
+            color: rgba(255,255,255,1);
+        }
+    }
+    .login_btn{
+        @include _btn(94px,36px,#349af5,rgba(255,255,255,0.8),#fff,4px,14px);
+        border: none;
+        margin-right: 10px;
+        margin-top: 27px;
+        @include _transition (color,0.5s);
+        &:hover{
+            background-color: #fff;
+        }
+    }
+    .mobile_b_icon{
+        width:20px;
+        height: 25px;
+        display: inline-block;
+        background: url('/images/app/cube_icon.png') -168px -394px;
+        vertical-align: middle;
+    }
+    .nav_item{
+        display: inline-block;
+        padding: 0 16px;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        height: 90px;
+    }
+    .nav_item_on{
+        display: inline-block;
+        padding: 0 16px;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        height: 90px;
+        font-weight: 700;
+    }
+}
+.header_i{
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    height: 90px;
+    line-height: 90px;
+    .register_btn{
+        @include _btn(94px,34px,#0e7fdf,#fff,#0e7fdf,4px,14px);
+        margin-top: 27px;
+    }
+    .login_btn{
+        @include _btn(94px,34px,#fff,#007CE2,#0e7fdf,4px,14px);
+        margin-left: 10px;
+        margin-top: 27px;
+    }
+    .mobile_b_icon{
+        width:20px;
+        height: 25px;
+        display: inline-block;
+        background: url('/images/app/cube_icon.png') -297px -394px;
+        vertical-align: middle;
+    }
+    .nav_item{
+        display: inline-block;
+        padding: 0 16px;
+        text-align: center;
+        color: #505559;
+        font-size: 18px;
+        height: 70px;
+        &:hover{
+            color:#0e7fdf;
+        }
+    }
+    .nav_item_on{
+        display: inline-block;
+        padding: 0 16px;
+        text-align: center;
+        color: #0e7fdf;
+        font-size: 18px;
+        height: 70px;
+        border-bottom: 2px solid #1988E5;
+    }
+}
+.header_i, .trans_header{
+    width: 100%;
+    z-index: 1000;
+}
+
+.qrcode_wrap{
+    position: absolute;
+    z-index: 1000;
+    height: 90px;
+    width: 140px;
+}
+.employee{
+    display: inline-block;
+    font-weight: 200;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+.logo{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 40px;
+}
+
+.footer{
+    height: 354px;
+    background: url('/images/app/footer_bg.png') repeat-y!important;
+    // background-size: 100% 100% !important;
+    // -webkit-background-size: 100% 100% !important;
+    // -moz-background-size: 100% 100% !important;
+    // -o-background-size: 100% 100% !important;
+    .con_wrap{
+        margin: 0 auto;
+    }
+}
+
+.concact{
+    color: #999;
+    margin: 90px 0 0 0;
+}
+.server{
+    margin: 90px 0 0 0;
+    float: left;
+    p{
+        color: #999;
+    }
+    a{
+        color: #999;
+        line-height: 30px;
+    }
+    .item{
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+.friendly{
+    margin: 90px 0px 0px 0px;
+    float: left;
+    a{
+        color: #999;
+        line-height: 30px;
+        @include _transition (color,0.5s);
+        &:hover{
+            color: #f2f4f5;
+            text-decoration: none;
+        }
+    }
+    .item{
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+.auth{
+    margin: 0 auto;
+    color: #757b82;
+    border-top: 1px solid #21262b;
+    // height: 60px;
+    // line-height: 60px;
+    .auth_inner{
+        display: block;
+        margin: 0 auto;
+        font-size: 14px;
+        a{
+            color: #757b82;
+            margin-left: 10px;
+            @include _transition (color,0.5s);
+            &:hover{
+                color: #f2f4f5;
+                text-decoration: none;
+            }
+        }
+        .auth_text{
+            // line-height: 60px;
+        }
+    }
+}
+.about, .wexin{
+    float: left;
+    text-align: left;
+    margin: 90px 0 0 0;
+    // width: 112px;
+    p{
+        line-height: 25px;
+    }
+    a{
+        color: #999;
+        line-height: 30px;
+        @include _transition (color,0.5s);
+        &:hover{
+            color: #f2f4f5;
+            text-decoration: none;
+        }
+    }
+    .item{
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .code{
+        width: 110px;
+        height: 110px;
+    }
+}
+.wexin > p{
+    color: #cbced2;
+    text-align: center;
+    font-size: 12px;
+}
+
+.qrcode{
+    z-index: 100;
+    position: absolute;
+    padding: 10px;
+    display: none;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-left: -37px;
+    background-color: #fff;
+    width: 140px;
+    height: 140px;
+    border: 1px solid #ccc;
+    color: #999;
+    text-align: center;
+    line-height: 20px;
+    img{
+        vertical-align: middle;
+    }
+}
+.qrcode:after, .qrcode:before {
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    left: 42%;
+    position: absolute;
+    width: 0;
+    z-index: -1;
+}
+.qrcode:after {
+    border-width: 11px;
+    border-bottom-color: #fff;
+    top: -22px;
+}
+.qrcode:before {
+    border-width: 11px;
+    border-bottom-color: #ccc;
+    top: -23px;
+}
+.footer p a{
+    color: #999;
+    line-height: 30px;
+}
+
+.header_in  a{
+    @include _transition (color,0.5s);
+}
+
+.header_in .login_btn {
+    @include _transition (background-color,0.5s);
+}
+.btn-position{
+    margin-top: 27px;
+}

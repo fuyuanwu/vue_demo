@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../fragment/cards.scss";
+@import "../../fragment/layer.scss";
+.main {
+    min-height: 600px;
+}
+.task_title {
+    font-size: 20px;
+    color: #5b636a;
+    line-height: 70px;
+    padding: 0px 35px;
+    border-bottom: 1px solid #f9f9f9;
+    margin-bottom: 20px;
+    .explain {
+        font-size: 12px;
+        color: #5c5c5c;
+        margin-left: 25px;
+        font-weight: normal;
+    }
+}
+
+.card_wrapper {
+    margin: 30px 30px 20px 60px;
+    float: left;
+    display: block;
+    .card_desc {
+        color: #999999;
+        margin-top: 8px;
+        height: 30px;
+        line-height: 30px;
+        .time {
+            color: #444444;
+            font-weight: bold;
+        }
+        .btn-1 {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+}
+.cards {
+    margin: 20px -20px 20px;
+    overflow: hidden;
+}
+
+.J-delete_it {
+    float: right;
+    *margin-top: -18px;
+}
+
+.card-type {
+    background: #CCE7FA;
+    color: #447EC2;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    width: 50px;
+    height: 25px;
+    line-height: 24px;
+    text-align: center;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.submit_btn {
+    margin:25px 0px 0px 10px;
+}
+.addnewcard {
+    width: 125px;
+    height: 125px;
+    text-align: center;
+    line-height: 110px;
+    display: inline-block;
+    font-size: 120px;
+    border: 2px solid #f8f8f8;
+    border-radius: 5px;
+    color: #f0f0f0;
+    margin: 30px 0px 50px 40px;
+}
+.layer {
+    .text-center {
+        text-align: center;
+        margin: 30px 0px;
+    }
+}
+.card_tip {
+    font-size: 12px;
+    color: #565656;
+    width: 420px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+#J-del-layer {
+    width: 500px;
+    margin-left: -250px;
+    margin-top: -195px;
+}

@@ -1,0 +1,208 @@
+// 1. 设置文本域滚可拖动改变垂直方向尺寸
+textarea {
+    resize: vertical;
+}
+
+// 1. 清除webkit下表单元素的outline
+input,
+textarea,
+button,
+select
+a {
+    outline: 0 none;
+}
+// 1. 让表单元素具有颜色继承
+// 2. iOS上当禁用时会设置opacity: .4
+input,
+textarea,
+button,
+select {
+    color: inherit;
+    &:disabled {
+        opacity: 1;
+    }
+}
+
+// 1. 清除Firefox按钮内部边框和补白
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+    cursor: not-allowed;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+// 1. 为不继承的元素设定继承父级行高
+// 2. 为不继承的元素设定继承父级字体
+
+textarea,
+button,
+select,
+pre,
+xmp,
+tt,
+code,
+kbd,
+samp {
+    line-height: inherit;
+    font-family: inherit;
+}
+
+// 1. 为不继承的元素设定继承父级字号
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small,
+big,
+input,
+textarea,
+button,
+select {
+    font-size: inherit;
+    font-weight: normal;
+}
+
+// 1. 重置斜体表现为正常文本
+address,
+cite,
+dfn,
+em,
+i,
+optgroup,
+var {
+    font-style: normal;
+}
+
+// 1. 清除单元格边距并让边框合并
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    text-align: left;
+}
+
+// 1. 清除列表默认序号
+ul,
+ol,
+menu {
+    list-style: none;
+}
+
+// 1. 清除默认边框
+// 2. 清除img底部留白问题，并使得默认居中
+fieldset,
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+// 1. 设置HTML5部分新增元素为块元素
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+// 1. 设置HTML5新增媒体元素与img, object保持一致
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+// 1. 清除引用元素的默认派生标识
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "\0020";
+}
+// 1. 清除文本线条装饰
+a,
+ins,
+s,
+del {
+    text-decoration: none;
+}
+* {padding:0;margin:0}
+a {
+    color: #0e7fdf;
+    cursor: pointer;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"]::-webkit-file-upload-button,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+    box-sizing: content-box;
+}
+select:disabled, option:disabled, select[disabled] > option {
+  color: #b2b2b2;
+}
+input:-webkit-autofill {
+-webkit-box-shadow: 0 0 0px 1000px white inset;
+}

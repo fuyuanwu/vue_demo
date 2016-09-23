@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../fragment/date_pick.scss";
+@import "../../component/btn.scss";
+@import "../../../../../basis/widget/pickday/pickday.scss";
+.container {
+    margin-bottom: 40px;
+}
+.general{
+    padding: 30px;
+}
+.information {
+    margin: 10px 0px 40px;
+    h3 {
+        font-size: 18px;
+        color: #c1c1c1;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 18px;
+        color: #c1c1c1;
+        margin-bottom: 10px;
+    }
+    .message {
+        display: inline-block;
+        line-height: 80px;
+        width: 94%;
+        padding: 0 3%;
+        border-bottom: 1px solid #f8f8f8;
+        span {
+            display: inline-block;
+        }
+        .span-item1 {
+            color: #4d4d4d;
+            font-weight: bold;
+            width: 24%;
+            margin-right: 2%;
+        }
+        .span-item2 {
+            font-size: 12px;
+            color: #acacac;
+            width: 29%;
+            margin-right: 2%;
+        }
+        .span-item3 {
+            width: 26%;
+            margin-right: 20px;
+            color: #a6a6a6;
+        }
+        .operation {
+            text-align: left;
+            // width: 10%;
+        }
+    }
+    .borderno {
+        border:none;
+    }
+    table{
+        width: 100%;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        .name{
+            font-weight: bold;
+        }
+        .summary{
+            color: #acacac;
+        }
+        tr{
+            height: 70px;
+        }
+    }
+}
+
+
+

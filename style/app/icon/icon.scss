@@ -1,0 +1,283 @@
+@charset "utf-8";
+@mixin icon($width: 20, $height: 20) {
+    width: #{$width}px;
+    height: #{$height}px;
+    display: inline-block;
+    background: url(/images/app/cube_icon.png) no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.ok {
+    @include icon(22, 21);
+    background-position: -532px -390px;
+}
+.y_ques_mark{
+    @include icon(22, 20);
+    background-position: -396px -427px;
+}
+.ok-s {
+    @include icon(16, 16);
+    background-position: -168px -426px;
+}
+.ok-m {
+    @include icon(43, 43);
+    background-position: -524px -337px;
+}
+.i-safe {
+    @include icon(20, 24);
+    background-position: -196px -427px;
+}
+.i-news {
+    @include icon(90, 90);
+    background-position: -436px 0;
+}
+.i-yes {
+    @include icon(30, 22);
+    background-position: -483px -427px;
+}
+.i-sigh {
+    @include icon(30, 22);
+    background-position: -452px -426px;
+}
+.i-link {
+    @include icon(87, 87);
+    background-position: -10px -291px;
+}
+// .i-reset {
+//     @include icon(18, 18);
+//     background-position: -293px -391px;
+// }
+.i-msg1{
+    @include icon(20, 24);
+    background-position: -380px -127px;
+    margin-right: 6px;
+}
+.i-msg2{
+    @include icon(20, 24);
+    background-position: -415px -127px;
+    margin-right: 6px;
+}
+.i-msg3{
+    @include icon(20, 24);
+    background-position: -450px -127px;
+    margin-right: 6px;
+}
+.i-sa1{
+    @include icon(20, 24);
+    background-position: -486px -127px;
+    margin-right: 6px;
+}
+.i-sa2{
+    @include icon(20, 24);
+    background-position: -262px -152px;
+    margin-right: 6px;
+}
+.i-sa3{
+    @include icon(20, 24);
+    background-position: -300px -152px;
+    margin-right: 6px;
+}
+.i-em1{
+    @include icon(20, 24);
+    background-position: -340px -152px;
+    margin-right: 6px;
+}
+.i-em2{
+    @include icon(20, 24);
+    background-position: -383px -152px;
+    margin-right: 6px;
+}
+.i-em3{
+    @include icon(20, 24);
+    background-position: -417px -152px;
+    margin-right: 6px;
+}
+.calender_icon{
+    @include icon(37, 37);
+    background-position: -569px -427px;
+}
+.authed_icon{
+    @include icon(20, 22);
+    background-position: -260px -127px;
+}
+.approve_icon{
+    @include icon(20, 22);
+    background-position: -340px -127px;
+}
+.unauthed_icon{
+    @include icon(20, 22);
+    background-position: -300px -127px;
+}
+.i-circle_b{
+    @include icon(24, 24);
+    background-position: -42px -394px;
+}
+.i-circle_g{
+    @include icon(24, 24);
+    background-position: -84px -394px;
+}
+.i-circle_p{
+    @include icon(24, 24);
+    background-position: -128px -394px;
+}
+.forum_icon {
+    @include icon(28, 35);
+    display: block;
+    background-position: -182px -81px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.questionnaire_icon{
+    @include icon(28, 35);
+    display: block;
+    background-position: -225px -81px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.msg_icon{
+    @include icon(24, 20);
+    background-position: -340px -88px;
+}
+.sender_icon{
+    @include icon(20, 18);
+    background-position: -262px -188px;
+}
+.clock_icon{
+    @include icon(20, 16);
+    background-position: -319px -188px;
+}
+.recipient_icon{
+    @include icon(20, 16);
+    background-position: -290px -188px;
+}
+.search-icon{
+    @include icon(28, 20);
+    background-position: -514px -138px;
+}
+.head-icon{
+    @include icon(20, 20);
+    background-position: -346px -186px;
+}
+.c-icon{
+    @include icon(14, 14);
+    background-position: -366px -187px;
+    &:hover{
+        @include icon(14, 14);
+        background-position: -388px -187px;
+    }
+}
+.test-icon{
+    @include icon(30, 30);
+    margin-right: 10px;
+    background-position: -144px -226px;
+}
+.train-icon{
+    @include icon(30, 30);
+    margin-right: 10px;
+    background-position: -187px -226px;
+}
+.custom-icon{
+    @include icon(50, 54);
+    background-position: -117px -291px;
+}
+.chart-icon{
+    @include icon(30, 30);
+    background-position: -230px -225px;
+}
+.search-bar__icon{
+    @include icon(40, 30);
+    border-radius: 0 4px 4px 0;
+    position: relative;
+    left: -45px;
+    top: -1px;
+    background-color: #59B1FC;
+    background-position: -514px -141px;
+}
+.add-icon{
+    @include icon(18, 18);
+    background-position: -415px -90px;
+}
+.gift-icon{
+    @include icon(20, 20);
+    background-position: -450px -155px;
+}
+.PICC-icon{
+    @include icon(48, 18);
+    background-position: -116px -364px ;
+}
+.export-icon{
+    @include icon(18, 18);
+    background-position: -485px -158px ;
+}
+.nav-arrow{
+    @include icon(18, 18);
+    background-position: -414px -186px ;
+}
+.saving_pot-icon{
+    @include icon(20, 20);
+    background-position: -6px -225px ;
+}
+.staff-icon{
+    @include icon(20, 20);
+    background-position: -34px -225px ;
+}
+.dept-icon{
+    @include icon(20, 20);
+    background-position: -62px -225px ;
+}
+.salary-icon{
+    @include icon(20, 20);
+    background-position: -90px -225px ;
+}
+.welfare_m-icon{
+    @include icon(20, 20);
+    background-position: -6px -257px ;
+}
+.welfare_s-icon{
+    @include icon(20, 20);
+    background-position: -36px -257px ;
+}
+.examination-icon{
+    @include icon(20, 20);
+    background-position: -62px -257px ;
+}
+.report-icon{
+    @include icon(20, 20);
+    background-position: -90px -257px ;
+}
+.contract-icon{
+    @include icon(20, 20);
+    background-position: -115px -257px ;
+}
+.trade_recordes-icon{
+    @include icon(20, 20);
+    background-position: -318px -210px ;
+}
+.statement-icon{
+    @include icon(20, 20);
+    background-position: -261px -208px ;
+}
+.setting-icon{
+    @include icon(20, 20);
+    background-position: -290px -210px ;
+}
+.authority-icon{
+    @include icon(20, 20);
+    background-position: -115px -226px ;
+}
+.message-icon{
+    @include icon(20, 20);
+    background-position: -346px -208px ;
+}
+.bank_icon{
+    @include icon(42, 42);
+    background-position: -174px -272px ;
+}
+.logo_icon{
+    @include icon(42, 42);
+    background-position: -226px -270px ;
+}
+.xiaodai_icon{
+    @include icon(42, 42);
+    background-position: -176px -317px ;
+}

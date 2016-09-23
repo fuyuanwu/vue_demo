@@ -1,0 +1,192 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../component/btn.scss";
+@import "../../fragment/agreement.scss";
+@import "../../../../../basis/widget/paginate/style.scss";
+
+.welbuy-card{
+    margin: 10px;
+}
+.welbuy-card-head{
+    font-size: 20px;
+    color: #333;
+}
+.healthy_tag{
+    display: inline-block;
+    background-color: #32C26F;
+    color: #fff;
+    height: 18px;
+    width: 40px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 18px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.trains_tag{
+    display: inline-block;
+    background-color: #FEC33B;
+    color: #fff;
+    height: 18px;
+    width: 40px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 18px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.wel-card-tag__healthy{
+    display: block;
+    position: absolute;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    background: url(/images/app/cube_icon.png) no-repeat;
+    background-position: -536px -4px;
+}
+.welbuy-card-img{
+    position: absolute;
+    height: 290px;
+    width: 520px;
+    top: 10px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.wel-card-tag__train{
+    display: block;
+    position: absolute;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    background: url(/images/app/cube_icon.png) no-repeat;
+    background-position: -536px -66px;
+}
+.welbuy-card_top{
+    position: relative;
+    height: 290px;
+}
+.welbuy-card-content{
+    margin-top: 20px;
+    position: relative;
+}
+.welbuy-shop{
+    margin-left: 540px;
+    // width: 45%;
+}
+.number{
+    display: inline-block;
+    width: 160px;
+    height: 38px;
+    line-height: 38px;
+    position: relative;
+    border-radius: 4px;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #DBDBDB;
+    .minus{
+        display: block;
+        width: 40px;
+        height: 38px;
+        position: absolute;
+        color: #999;
+        font-size: 26px;
+        cursor: pointer;
+    }
+    .plus{
+        display: block;
+        width: 40px;
+        height: 38px;
+        position: absolute;
+        color: #999;
+        font-size: 26px;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+}
+.welbuy-card--ipt{
+    border: none;
+    border-left: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB;
+    width: 76px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 34px;
+}
+.welbuy-items{
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+.welbuy-paragraph{
+    display: inline-block;
+    border: 1px solid #F5E6CF;
+    background-color: #FBF8EE;
+    color: #333;
+    width: 82%;
+    position: relative;
+    right: 0;
+    padding: 4px;
+}
+.js-buy{
+    margin-left: 46px;
+}
+.package-tabs{
+    border-bottom: 1px solid #DDDDDD;
+    li{
+        float: left;
+        padding: 0 20px;
+        line-height: 32px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+.package-tabs__active{
+    border-bottom: 2px solid #3D9CF2;
+    color: #3D9CF2;
+}
+.welbut-card-bot{
+    // width: 98%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    margin-top: 50px;
+    img{
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+    }
+}
+.bot-tabs{
+    background-color: #F7F7F7;
+}
+.bot-tabs__li{
+    display: inline-block;
+    line-height: 50px;
+    width: 140px;
+    cursor: pointer;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+}
+.bot-tabs-active{
+    color: #0e7fdf;
+    background-color: #fff;
+    border-top: 2px solid #1B81DC;
+}
+.preferential{
+    display: inline-block;
+    padding: 0 6px;
+    background-color: #F9747A;
+    color: #fff;
+    margin-left: 10px;
+}
+
+
+
+
+
+

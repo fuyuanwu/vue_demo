@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../fragment/layer.scss";
+@import "../../component/btn.scss";
+@import "../../../../../basis/widget/shade/shade.scss";
+
+.newlyadd{
+    .head_bar{
+        margin: 10px 30px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+        span{
+            margin-right: 10px;
+        }
+        .not_related{
+            line-height: 30px;
+        }
+        .text_invited{
+            height: 28px;
+            line-height: 28px;
+        }
+    }
+    .newly_wrap{
+        margin: 30px;
+        .title{
+            color: #c1c1c1;
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+            top: 20px;
+        }
+        .cell_bar{
+            padding: 20px;
+            border-top: 1px solid #e9e9e9;
+            margin-top: 30px;
+            i{
+                display: inline-block;
+                width: 80px;
+                text-align: right;
+            }
+            span{
+                display: inline-block;
+            }
+            .cell{
+                margin-right: 190px;
+                margin-top: 30px;
+                span{
+                    display: inline-block;
+                    width: 150px;
+                }
+            }
+        }
+        .explain{
+            float: right;
+            margin-right: 116px;
+            margin-top: -52px;
+            color: #848484;
+        }
+    }
+}
+
+.other_cell{
+    position: relative;
+    top: 10px;
+    left: 104px;
+    margin-bottom: 50px;
+    span{
+        display: inline-block;
+    }
+    .cell{
+        margin-right: 190px;
+        span{
+            display: inline-block;
+            width: 190px;
+        }
+    }
+}
+

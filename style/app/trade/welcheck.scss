@@ -1,0 +1,25 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../component/btn.scss";
+@import "../../component/table.scss";
+@import "../../../../../basis/widget/alert/alert.scss";
+@import "../../../../../basis/widget/paginate/style.scss";
+
+.general{
+    min-height: 500px;
+}
+.check-container{
+    margin: 10px;
+}
+.manage-card{
+    border: 1px solid #E6E6E6;
+    margin: 10px 10px 20px;
+    position: relative;
+    border-radius: 4px;
+    height: 156px;
+}
+.card-head{
+    color: #333;
+}

@@ -1,0 +1,235 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../component/btn.scss";
+@import "../../../../../basis/widget/pickday/pickday.scss";
+@import "../../../../../basis/widget/alert/alert.scss";
+@import "../../../../../basis/widget/shade/shade.scss";
+@import "../../../../../basis/widget/chartist/_chartist-settings.scss";
+@import "../../../../../basis/widget/chartist/chartist.scss";
+
+.use_situtation{
+    // height: 450px;
+    margin-bottom: 30px;
+    .head{
+        font-weight: bold;
+        font-size: 20px;
+        height: 40px;
+        line-height: 30px;
+        padding-left: 14px;
+        border-bottom: 1px solid #EEEEEE;
+    }
+    .chart_block{
+        // margin-top: 40px;
+        .chart_head{
+            margin-left: 20px;
+            color: #9B9B9B;
+            font-size: 12px;
+            .units{
+                margin-top: 30px;
+            }
+            span{
+                margin-right: 10px;
+            }
+        }
+        .loading_bar{
+            // width: 100%;
+            height: 80px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 110px;
+            img{
+                vertical-align: middle;
+            }
+        }
+        .buy,.gift,.free{
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 4px;
+        }
+        .buy{
+            background-color: #55CDEF;
+        }
+        .gift{
+            background-color: #3EA3DD;
+        }
+        .free{
+            background-color: #2C6FC0;
+        }
+        .ct_con{
+            position: relative;
+            .ct_h_layer{
+                position: absolute;
+                background-color: #EFF4FC;
+                border-radius: 6px;
+                width: 120px;
+                height: 80px;
+                z-index: 1000;
+                padding: 10px;
+                left: 56px;
+                // top: -40px;
+            }
+            .ct_h_layer:before{
+                border: solid transparent;
+                content: ' ';
+                height: 0;
+                left: 20px;
+                position: absolute;
+                width: 0;
+                border-width: 12px;
+                border-top-color: #EFF4FC;
+                top: 100px;
+            }
+        }
+    }
+}
+.order{
+    -webkit-user-select: none;  /* Chrome all / Safari all /opera15+*/
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+    .head_bar{
+        font-weight: bold;
+        font-size: 20px;
+        height: 40px;
+        line-height: 30px;
+        padding-left: 14px;
+        border-bottom: 1px solid #EEEEEE;
+    }
+    .o_control{
+        width: 800px;
+        margin-left: 40px;
+        margin-top: 40px;
+        .o_row{
+            margin: 40px 0;
+            .o_lab{
+                width: 70px;
+                display: inline-block;
+                line-height: 38px;
+            }
+            .number{
+                display: inline-block;
+                width: 160px;
+                height: 38px;
+                line-height: 38px;
+                position: relative;
+                border-radius: 4px;
+                background: #fff;
+                text-align: center;
+                border: 1px solid #DBDBDB;
+                // overflow: hidden;
+                .minus{
+                    display: block;
+                    width: 40px;
+                    height: 38px;
+                    position: absolute;
+                    // background-color: #fafafa;
+                    color: #999;
+                    font-size: 26px;
+                    cursor: pointer;
+                }
+                .plus{
+                    display: block;
+                    width: 40px;
+                    height: 38px;
+                    position: absolute;
+                    // background-color: #fafafa;
+                    color: #999;
+                    font-size: 26px;
+                    top: 0;
+                    right: 0;
+                    cursor: pointer;
+                }
+                .o_input{
+                    border: none;
+                    border-left: 1px solid #DBDBDB;
+                    border-right: 1px solid #DBDBDB;
+                    width: 76px;
+                    text-align: center;
+                    line-height: 38px;
+                }
+            }
+            .options_tips{
+                display: inline-block;
+                margin-left: 70px;
+            }
+            .o_tips{
+                margin-left: 80px;
+                line-height: 30px;
+            }
+            .o_effective{
+                width: 258px;
+                height: 38px;
+                border-radius: 4px;
+            }
+        }
+        .input_hint{
+            top: 40px;
+        }
+    }
+    .slider_range{
+        display: inline-block;
+        position: relative;
+
+        .slider_cell{
+            display: inline-block;
+            width: 45px;
+            height: 40px;
+            line-height: 40px;
+            color: #868f9f;
+            background-color: #EFF1F5;
+            text-align: center;
+            border-right: 1px solid #E1E3E7;
+            cursor: default;
+        }
+        .slider_drag{
+            position: absolute;
+            background-color: #449DEA;
+            width: 18px;
+            height: 46px;
+            color: #94D0FF;
+            text-align: center;
+            line-height: 46px;
+            font-size: 20px;
+            cursor: default;
+        }
+    }
+    .o_confirm{
+        float: right;
+        width: 280px;
+        .head{
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            color: #353535;
+            border-bottom: 1px solid #EFEFEF;
+        }
+        .c_row{
+            margin: 16px 0;
+            .c_lab{
+                color: #909090;
+                width: 80px;
+            }
+            .c_amount{
+                font-size: 32px;
+                color: #f68118;
+            }
+            .buy_btn{
+                width: 140px;
+                height: 40px;
+                line-height: 40px;
+                color: #fff;
+                text-align: center;
+                background-color: #59B1FC;
+                border: none;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+
+

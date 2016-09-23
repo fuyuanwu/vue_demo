@@ -1,0 +1,149 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/header_footer.scss";
+
+
+.wrap_inner{
+    background-image: url("/images/app/event/bg.png");
+    background-position: center;
+    min-height: 520px;
+}
+@include responsive(s) {
+    .feature{ width: 700px;}
+}
+@include responsive(m) {
+    .feature{ width: 980px;}
+}
+@include responsive(l) {
+    .feature{ width: 980px;}
+}
+@include responsive(xl) {
+    .feature{ width: 1180px;}
+}
+@mixin feature($color,$num){
+    .feature{
+        // width: 980px;
+        margin: 0 auto;
+        padding: 120px 0;
+        .nums{
+            width: 120px;
+            height: 100px;
+            display: table-cell;
+            background: url("/images/app/event/"+$num+".png") no-repeat;
+            border-bottom: 2px solid $color;
+        }
+        .heading{
+            display: table-cell;
+            padding-left: 20px;
+            border-bottom: 2px solid #ECECEC;
+            h2{
+                font-size: 44px;
+                line-height: 50px;
+                color: $color;
+            }
+            p{
+                line-height: 40px;
+                color: #3a3c3e;
+                font-size: 16px;
+            }
+        }
+        .intro{
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #1f2123;
+            font-size: 20px;
+        }
+        .columns{
+            margin: 0 -20px;
+            .column{
+                padding: 0 20px;
+                float: left;
+            }
+            .one-third{
+                width: 33.33%;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -o-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 0 20px;
+            }
+            .one-second{
+                width: 50%;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -o-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 0 20px;
+            }
+            .one-month_bg{
+                height: 188px;
+                border-radius: 6px;
+                background: url("/images/app/event/one-month_"+$num+".png") center;
+            }
+            .three-month_bg{
+                height: 188px;
+                border-radius: 6px;
+                background: url("/images/app/event/three-month_"+$num+".png") center;
+            }
+            .one-year_bg{
+                height: 188px;
+                border-radius: 6px;
+                background: url("/images/app/event/one-year_"+$num+".png") center;
+            }
+        }
+        .description{
+            margin-top: 40px;
+            padding: 20px 30px 20px 30px;
+            color: #2d2c2c;
+            font-size: 16px;
+            line-height: 36px;
+            .light{
+                color: #a1a1a1;
+                font-size: 14px;
+                margin-left: 20px;
+                line-height: 30px;
+            }
+        }
+        .join_btn{
+            width: 264px;
+            height: 50px;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid $color;
+            color: $color;
+            background-color: #fff;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 6px;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+    }
+}
+.main_content{
+    margin: 0 auto;
+    .inside_1{
+        @include feature(#2971cb,"num1");
+        background: #fff url('/images/app/event/pattern_num1.png') no-repeat right bottom;
+        .description{
+            background-color: #F3F7FD;
+        }
+    }
+    .inside_2{
+        @include feature(#1EB4A1,"num2");
+        background: #F7F9FA url('/images/app/event/pattern_num2.png') no-repeat left bottom;
+        .description{
+            background-color: #EDF2F2;
+        }
+    }
+    .inside_3{
+        @include feature(#687AE8,"num3");
+        background: #fff url('/images/app/event/pattern_num3.png') no-repeat right top;
+        .description{
+            background-color: #F4F5FD;
+        }
+    }
+
+}

@@ -1,0 +1,19 @@
+@import "../member/pub.scss";
+.success_tip {
+    color: #4c5a66;
+    font-size: 24px;
+    margin-bottom: 42px;
+    font-weight: bold;
+    i {
+        margin-right: 12px;
+        vertical-align: -13px;
+    }
+}
+.success {
+    font-size: 14px;
+    font-weight: normal;
+    span {
+        font-size: 18px;
+        margin-right: 8px;
+    }
+}

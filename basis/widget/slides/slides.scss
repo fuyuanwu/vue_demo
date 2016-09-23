@@ -1,0 +1,56 @@
+.slides { display: none; }
+
+.slides .slidesjs-navigation { margin-top: 3px; }
+
+.slides .slidesjs-previous { float: left; margin-right: 5px; }
+
+.slides .slidesjs-next { float: left; margin-right: 5px; }
+
+.slidesjs-pagination {
+  bottom: 10px;
+  left: 50%;
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.slides{
+  .slidesjs-pagination li { float: left; margin: 0 4px; }
+  .slidesjs-pagination li a {
+    background-image: url(/images/app/banner/pagination1.png);
+    background-position: -21px 0;
+    display: block;
+    float: left;
+    height: 0;
+    overflow: hidden;
+    padding-top: 13px;
+    width: 13px;
+  }
+}
+.sub_slides{
+  .slidesjs-pagination li { float: left; margin: 0 9px; }
+  .slidesjs-pagination li a {
+    background-image: url(/images/app/banner/pagination2.png);
+    background-position: -30px 0;
+    display: block;
+    float: left;
+    height: 0;
+    overflow: hidden;
+    padding-top: 12px;
+    width: 12px;
+  }
+}
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active { background-position: 0 0; }
+
+.slidesjs-pagination li a:hover { background-position: 0px 0px; }
+
+.slides a:link,
+.slides a:visited { color: #333; }
+
+.slides a:hover,
+.slides a:active { color: #9e2020; }
+
+.navbar { overflow: hidden; }

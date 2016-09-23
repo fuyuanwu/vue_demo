@@ -1,0 +1,174 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../fragment/cards.scss";
+@import "../../fragment/layer.scss";
+
+.task_title {
+    font-size: 20px;
+    color: #5b636a;
+    line-height: 70px;
+    padding: 0px 35px;
+    border-bottom: 1px solid #f9f9f9;
+    margin-bottom: 20px;
+    .explain {
+        font-size: 12px;
+        color: #5c5c5c;
+        margin-left: 25px;
+        font-weight: normal;
+    }
+}
+
+.card_wrapper {
+    margin: 30px 30px 20px 60px;
+    form{
+        height: 660px;
+    }
+    .card_desc {
+        color: #999999;
+        margin-top: 8px;
+        height: 30px;
+        line-height: 30px;
+        .time {
+            color: #444444;
+            font-weight: bold;
+        }
+        .btn-1 {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+}
+
+.mt-20{
+    margin-bottom: 20px;
+}
+.form-row {
+    @extend .mt-20;
+    .row-label {
+        display: inline-block;
+        margin-right: 15px;
+        width: 110px;
+        height: 40px;
+        line-height: 40px;
+        color: #232323;
+        text-align: right;
+    }
+    .row-ipt {
+        position: relative;
+        display: inline-block;
+        height: 40px;
+        padding:12px;
+        width: 288px;
+        border:1px solid #ccc;
+        box-sizing:border-box;
+    }
+
+    .kh_area {
+        vertical-align: top;
+    }
+    .province_box,.city_box{
+        padding: 0px;
+        width: 140px;
+        .province_log,.city_log{
+            position: absolute;
+        }
+        .province,.city{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+        .province_select,.city_select {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+    }
+    .bank_bind {
+        margin-left: 130px;
+        margin-top: 10px;
+    }
+}
+input[type="text"] {
+    border:none;
+}
+input:focus {
+    border: 1px solid #59b1ff;
+}
+.tip {
+    margin-left: 130px;
+    margin-top: 10px;
+}
+.select_ipt{
+    width: 140px;
+    height: 40px;
+    background-color: #fff;
+    border:1px solid #ccc;
+}
+#J_select_bank{
+    position: relative;
+    width: 510px;
+    margin-left: 130px;
+    margin-top: -26px;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+.bank_layer{
+    position: relative;
+    height: 280px;
+    li{
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .bank_logo{
+        border: 1px solid #eee;
+    }
+}
+.active{
+    border: 1px solid #2492EE;
+}
+
+.input_hint{
+    position: relative;
+}
+#J_code_hint{
+    position: relative;
+    top: -580px;
+    left: 50px;
+}
+#J-address_city-hint{
+    position: absolute;
+    left: 490px;
+    margin-top: -66px;
+}
+.bankcode_hint{
+    position: absolute;
+    margin-top: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

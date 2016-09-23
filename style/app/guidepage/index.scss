@@ -1,0 +1,218 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+.explain{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 14px;
+    text-align: left;
+}
+h2{
+    font-size: 20px;
+    font-weight: normal;
+}
+.step_wrap{
+    overflow: hidden;
+    .hidden_wrap{
+        height: 110px;
+        width: 100%;
+    }
+}
+.newly_icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 90px;
+    background: url('/images/app/cube_icon.png') no-repeat -90px -85px;
+}
+.companyapprove_icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 87px;
+    background: url('/images/app/cube_icon.png') no-repeat -265px 0;
+}
+.auth_icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 68px;
+    height: 90px;
+    background: url('/images/app/cube_icon.png') no-repeat -265px -18px;
+}
+.save_icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 96px;
+    height: 90px;
+    background: url('/images/app/cube_icon.png') no-repeat -324px -5px;
+}
+.salary_icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 90px;
+    background: url('/images/app/cube_icon.png') no-repeat -10px -85px;
+}
+.first,.second,.third,.fourth{
+    width: 23.5%;
+    margin-right: 1.2%;
+    height: 110px;
+    color: #fff;
+    border-radius: 4px 0 0 4px;
+    text-align: center;
+    position: relative;
+}
+.first{
+    background-color: #5BA5E3;
+}
+.second{
+    background-color: #53C7C7;
+}
+.third{
+    background-color: #F17A67;
+}
+.fourth{
+    background-color: #F2B94A;
+}
+@mixin arrow($color,$left,$zIndex){
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    left: $left;
+    position: absolute;
+    width: 0;
+    z-index: $zIndex;
+    border-top: 56px solid transparent;
+    border-left: 24px solid $color;
+    border-bottom: 54px solid transparent;
+    top: 0px;
+}
+.first:after{
+    @include arrow(#57A4E5,100%,1);
+}
+.mask_first:after{
+    @include arrow(#3986C6,100%,10);
+}
+.mask_second:after{
+    @include arrow(#2CAEAD,100%,10);
+}
+.mask_third:after{
+    @include arrow(#E06450,100%,2);
+}
+.mask_fourth:after{
+    @include arrow(#DCA230,100%,10);
+}
+.second:after  ,.fourth:after{
+    @include arrow(#F1F1F1,0,0);
+}
+.second:before{
+    @include arrow(#4DC7C8,100%,4);
+}
+.third:before{
+    @include arrow(#F1F1F1,0%,3);
+}
+.third:after{
+    @include arrow(#F37963,100%,1);
+}
+.fourth:before{
+    @include arrow(#F3BA3D,100%,0);
+}
+.mask_first{background-color: #3986C6;}
+.mask_second{background-color: #2CAEAD;}
+.mask_third{background-color: #E06450;}
+.mask_fourth{background-color: #DCA230;}
+.mask_first, .mask_second, .mask_third, .mask_fourth{
+    position: relative;
+    width: 90%;
+    height: 50px;
+    top: 0px;
+    text-align: left;
+    padding: 30px 0 30px 10% ;
+    border-radius: 4px 0 0 4px;
+    line-height: 26px;
+}
+.mask p {
+    padding-left: 15px;
+}
+.bottom_wrap{
+    width: 100%;
+    overflow: hidden;
+    height: 246px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 20px;
+    ul{
+        overflow: hidden;
+        width: 100%;
+    }
+    .head{
+        margin: 0 20px;
+        height: 56px;
+        line-height: 56px;
+        border-bottom: 1px solid #eee;
+        .btn{
+            display: inline-block;
+            width: 80px;
+            height: 26px;
+            line-height: 26px;
+            background-color: #41A6FC;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 16px;
+            color: #fff;
+        }
+    }
+    li{
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+}
+.wrapper{
+    overflow: hidden;
+}
+.right_wrap, .middle_wrap, .left_wrap{
+    width: 32%;
+}
+.right_wrap{
+    margin-left: -1px;
+    margin-right: -1px;
+}
+.middle_wrap{
+    margin: 0 2%;
+}
+.dynamic{
+    background: #fff;
+    border-radius: 4px;
+    height: 240px;
+    margin-top: 20px;
+    font-weight: bold;
+    // overflow: hidden;
+    .head{
+        margin: 0 20px;
+        height: 56px;
+        line-height: 56px;
+        border-bottom: 1px solid #eee;
+    }
+    .content{
+        margin: 20px 50px;
+        overflow: hidden;
+        .item{
+            height: 30px;
+        }
+        .num{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background: #41A6FC;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .date{
+            float: right;
+            margin-top: 2px;
+        }
+    }
+}

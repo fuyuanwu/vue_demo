@@ -1,0 +1,382 @@
+//媒体查询
+$media-types: (
+    //用于常规pad横竖屏
+    s:     "(min-width: 768px) and (max-width: 1024px)",
+    //用于常规笔记本
+    m:      "(min-width: 1025px ) and (max-width: 1280px)",
+    //用于常规台式机
+    l:      "(min-width: 1281px) and (max-width: 1440px)",
+    //用于超大台式机
+    xl:     "(min-width: 1441px)"
+    );
+
+@mixin responsive($media) {
+    @if not map-has-key($media-types, $media) {
+        @warn "#{$media} is not a known media type. Using portrait instead.";
+        $media: portrait;
+    }
+    @media #{map-get($media-types, $media)} {
+        @content;
+    }
+}
+
+@include responsive(s) {
+    .employee {
+        margin-right: 20px !important;
+     }
+    .s_text{
+        width: 980px;
+        margin-left: -490px;
+    }
+    .partners {
+        padding: 0;
+        .partner {
+            display: inline-block;
+            max-width: 45%;
+            margin: 60px 16px;
+            float: left;
+            border-radius: 2px;
+        }
+    }
+    //footer
+    .con_wrap{
+        width: 980px;
+    }
+    .auth_inner{
+        width: 700px;
+        .auth_text{
+            text-align: center;
+            float: none;
+            line-height: 30px;
+        }
+    }
+    .con_wrap{
+        .concact{
+            width: 240px;
+        }
+        .about{
+            width: 110px;
+        }
+        .server{
+            width: 300px;
+        }
+        .friendly{
+            width: 200px;
+        }
+    }
+    .main{
+        width: 80%;
+        margin-left: 24px;
+        margin-top: 24px;
+        border-radius: 4px;
+    }
+    //financing index
+    .finOverview{
+        width: 30%;
+    }
+    .rich_wrap{
+        width: 60%;
+    }
+    //my index
+    .information{
+        table{
+            td{
+                padding: 0 10px;
+            }
+            .name{
+                width: 220px;
+            }
+        }
+    }
+    //salary edit
+    .edit, .newlyadd {
+        .form_wrap {
+            .cell_bar {
+                .middle_cell{
+                    margin-left: 20px;
+                }
+                .right_cell{
+                    margin-left: 10%;
+                }
+                .wrap_cell{
+                    margin-left: 20px;
+                }
+                .tabs_bar{
+                    margin-left: 68px;
+                }
+                .tabs_next{
+                    margin-left: 17%;
+                }
+            }
+        }
+    }
+}
+@include responsive(m) {
+    .employee{
+        margin-right: 20px !important;
+     }
+    .s_text{
+        width: 1180px;
+        margin-left: -590px;
+    }
+    .partners {//benefits
+        padding: 0;
+        .partner {
+            display: inline-block;
+            max-width: 42%;
+            margin: 60px 4%;
+            float: left;
+            border-radius: 2px;
+        }
+    }
+    //footer
+    .con_wrap{
+        width: 980px;
+    }
+    .auth_inner{
+        width: 900px;
+        .auth_text{
+            text-align: center;
+            float: none;
+            line-height: 30px;
+        }
+    }
+    .con_wrap{
+        .concact{
+            width: 240px;
+        }
+        .about{
+            width: 110px;
+        }
+        .server{
+            width: 300px;
+        }
+        .friendly{
+            width: 200px;
+        }
+    }
+    .main{
+        width: 80%;
+        margin-left: 24px;
+        margin-top: 24px;
+        border-radius: 4px;
+    }
+    //financing index
+    .finOverview{
+        width: 32%;
+    }
+    .rich_wrap{
+        width: 59%;
+    }
+    //my index
+    .information{
+        table{
+            td{
+                padding: 0 20px;
+            }
+            .name{
+                width: 230px;
+            }
+        }
+    }
+    //salary edit
+    .edit, .newlyadd {
+        .form_wrap {
+            .cell_bar {
+                .middle_cell{
+                    margin-left: 90px;
+                }
+                .right_cell{
+                    margin-left: 12%;
+                }
+                .wrap_cell{
+                    margin-left: 90px;
+                }
+                .tabs_bar{
+                    margin-left: 138px;
+                }
+                .tabs_next{
+                    margin-left: 20%;
+                }
+            }
+        }
+    }
+}
+@include responsive(l) {
+    .s_text{
+        width: 1180px;
+        margin-left: -590px;
+    }
+    .partners {//benefits
+        padding: 0;
+        .partner {
+            display: inline-block;
+            max-width: 50%;
+            margin: 60px 30px;
+            float: left;
+            border-radius: 2px;
+        }
+    }
+    //footer
+    .con_wrap{
+        width: 1180px;
+    }
+    .auth_inner{
+        width: 1000px;
+        .auth_text{
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+        }
+    }
+    .con_wrap{
+        .concact{
+            width: 300px;
+        }
+        .about{
+            width: 160px;
+        }
+        .server{
+            width: 324px;
+        }
+        .friendly{
+            width: 260px;
+        }
+    }
+    .main{
+        width: 80%;
+        margin-left: 24px;
+        margin-top: 24px;
+        border-radius: 4px;
+    }
+    //financing index
+    .finOverview{
+        width: 32%;
+    }
+    .rich_wrap{
+        width: 60%;
+    }
+    //my index
+    .information{
+        table{
+            td{
+                padding: 0 20px;
+            }
+            .name{
+                width: 230px;
+            }
+        }
+    }
+    //salary edit
+    .edit, .newlyadd {
+        .form_wrap {
+            .cell_bar {
+                .middle_cell{
+                    margin-left: 138px;
+                }
+                .right_cell{
+                    margin-left: 14%;
+                }
+                .wrap_cell{
+                    margin-left: 138px;
+                }
+                .tabs_bar{
+                    margin-left: 185px;
+                }
+                .tabs_next{
+                    margin-left: 21%;
+                }
+            }
+        }
+    }
+}
+@include responsive(xl) {
+    .s_text{
+        width: 1180px;
+        margin-left: -590px;
+    }
+    .partners {//benefits
+        padding: 0;
+        .partner {
+            display: inline-block;
+            max-width: 50%;
+            margin: 60px 30px;
+            float: left;
+            border-radius: 2px;
+        }
+    }
+    //footer
+    .con_wrap{
+        width: 1180px;
+    }
+    .auth_inner{
+        width: 1180px;
+        .auth_text{
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+        }
+    }
+    .con_wrap{
+        .concact{
+            width: 300px;
+        }
+        .about{
+            width: 160px;
+        }
+        .server{
+            width: 324px;
+        }
+        .friendly{
+            width: 260px;
+        }
+    }
+    .main{
+        width: 68%;
+        margin-left: 24px;
+        margin-top: 24px;
+        border-radius: 4px;
+    }
+    //financing index
+    .finOverview{
+        width: 32%;
+    }
+    .rich_wrap{
+        width: 61%;
+    }
+    //my index
+    .information{
+        table{
+            td{
+                padding: 0 20px;
+            }
+            .name{
+                width: 230px;
+            }
+        }
+    }
+    //salary edit
+    .edit, .newlyadd {
+        .form_wrap {
+            .cell_bar {
+                .middle_cell{
+                    margin-left: 138px;
+                }
+                .right_cell{
+                    margin-left: 14%;
+                }
+                .wrap_cell{
+                    margin-left: 138px;
+                }
+                .tabs_bar{
+                    margin-left: 185px;
+                }
+                .tabs_next{
+                    margin-left: 18%;
+                }
+            }
+        }
+    }
+}
+
+

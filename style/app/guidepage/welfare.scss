@@ -1,0 +1,191 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/header_footer.scss";
+
+
+.wrap_inner{
+    background-image: url("/images/app/welfare/bg.png");
+    background-position: center;
+    min-height: 552px;
+}
+.bg_lt{
+    height: 1842px;
+    position: relative;
+    background: url("/images/app/welfare/pur.png") no-repeat left center;
+}
+.bg_rt{
+    position: absolute;
+    height: 1200px;
+    width: 270px;
+    right: 0;
+    z-index: 0;
+    background: url("/images/app/welfare/pur.png") no-repeat right top;
+}
+.main_content{
+    z-index: 10;
+    margin: 0 auto;
+    // width: 1180px;
+    position: absolute;
+    left: 50%;
+    // margin-left: -590px;
+}
+@include responsive(s) {
+    .main_content{ width: 700px;margin-left: -350px;}
+}
+@include responsive(m) {
+    .main_content{ width: 980px;margin-left: -490px;}
+}
+@include responsive(l) {
+    .main_content{ width: 1180px;margin-left: -590px;}
+}
+@include responsive(xl) {
+    .main_content{ width: 1180px;margin-left: -590px;}
+}
+
+.physical_e{
+    margin-top: 120px;
+    .head{
+        height: 140px;
+        background: url("/images/app/welfare/physical_icon.png") no-repeat;
+        h2{
+            display: inline-block;
+            font-size: 34px;
+            color: #fff;
+            margin-left: 300px;
+            margin-top: 70px;
+        }
+    }
+    .details{
+        background-color: #25CCC5;
+        color: #fff;
+        border-radius: 6px;
+        margin-top: 10px;
+        .lt{
+            position: absolute;
+            font-weight: 700;
+            width: 69px;
+            padding-left:25px;
+            font-size: 16px;
+            // height: 284px;
+            div{
+                padding-top: 20px;
+            }
+        }
+        .rt{
+            padding-bottom: 20px;
+            border-left: 1px solid #fff;
+            margin-left: 120px;
+            font-size: 16px;
+            padding-left: 20px;
+            div{
+                padding-top: 20px;
+            }
+        }
+    }
+    .package{
+        margin-top: 10px;
+        .box{
+            background-color: #25CCC5;
+            height: 264px;
+            position: relative;
+            padding-top: 30px;
+            border-radius: 6px;
+            .cell{
+                background-color: #fff;
+                font-size: 24px;
+                color: #25CCC5;
+                width: 138px;
+                height: 46px;
+                line-height: 46px;
+                text-align: center;
+                margin: 0 auto;
+                border-radius: 138px;
+                box-shadow: 0 0 28px 1px rgba(158, 216, 255, 1.0);
+            }
+            .content{
+                background-color: #21BAB4;
+                border-radius: 20px;
+                min-height: 60px;
+                margin: 30px 20px 0;
+                color: #fff;
+                padding: 20px;
+                font-size: 16px;
+            }
+            .price{
+                text-align: center;
+                color: #fff;
+                font-size: 24px;
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                margin-left: -61px;
+            }
+        }
+    }
+    .columns{
+        margin: 0 -16px;
+        .column{
+            padding: 0 16px;
+            float: left;
+        }
+        .one-third{
+            width: 33.33%;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0 16px;
+        }
+    }
+}
+.appoint{
+    margin-top: 120px;
+    margin-bottom: 100px;
+    .head{
+        height: 122px;
+        width: 418px;
+        background: url("/images/app/welfare/appoint_icon.png") no-repeat;
+        h2{
+            display: inline-block;
+            font-size: 34px;
+            color: #fff;
+            margin-left: 168px;
+            margin-top: 60px;
+        }
+    }
+    .details{
+        background-color: #47BFD7;
+        color: #fff;
+        border-radius: 6px;
+        margin-top: 10px;
+        .lt{
+            position: absolute;
+            font-weight: 700;
+            width: 69px;
+            padding: 0 25px;
+            font-size: 16px;
+            // height: 310px;
+            div{
+                padding-top: 20px;
+            }
+            .lt_2row{
+                padding-bottom: 28px;
+            }
+            .lt_3row{
+                padding-bottom: 6px;
+                padding-top: 30px;
+            }
+        }
+        .rt{
+            border-left: 1px solid #fff;
+            padding-bottom: 20px;
+            margin-left: 120px;
+            font-size: 16px;
+            padding-left: 20px;
+            div{
+                padding-top: 22px;
+            }
+        }
+    }
+}

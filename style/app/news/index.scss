@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import "../../pub/main.scss";
+@import "../../fragment/head_foot.scss";
+@import "../../fragment/sidebar.scss";
+@import "../../fragment/layer.scss";
+@import "../../../../../basis/widget/alert/alert.scss";
+@import "../../../../../basis/widget/paginate/style.scss";
+
+
+.newsIner_wrap{
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+    // max-width: 100%;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+.news__head{
+    border-bottom: 1px solid #EEEEEE;
+    line-height: 40px;
+}
+.news__tabs{
+    display: inline-block;
+    width: 156px;
+    text-align: center;
+    cursor: pointer;
+    color: #4b4b4b;
+}
+.news__tabs-active{
+    color: #333333;
+    font-weight: 700;
+    border-bottom: 2px solid #47A8F9;
+}
+.news__table{
+    width: 100%;
+    margin-top: 10px;
+    thead{
+        background-color: #F7F7F7;
+        line-height: 40px;
+        color: #b9b9b9;
+        th{
+            padding: 0 20px;
+        }
+    }
+}
+.news__tbody{
+    tr:hover{
+        background-color: #F2F6FA;
+    }
+    td{
+        padding: 0 20px;
+        line-height: 72px;
+        border-bottom: 1px solid #ECECEC;
+        white-space: nowrap;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+.unread{
+    color: #333;
+}
+.readed{
+    color: #999;
+}
+.news__title{
+    font-size: 22px;
+    color: #0e7fdf;
+    margin-bottom: 10px;
+}
+.news__subhead-rpt{
+    color: #666;
+}
+.news__subhead{
+    color: #999;
+    p{
+        line-height: 24px;
+    }
+}
+.news__content{
+    font-size: 16px;
+    color: #333;
+    min-height: 300px;
+    table{
+        td,th{
+            border: 1px solid #999;
+            padding: 3px 5px;
+            min-width: pxToRem(50px);
+            height: pxToRem(20px);
+        }
+    }
+}
+.mid_line{
+    margin: 0 20px;
+}
+.delbtn{
+    margin-left: 16px;
+}
+.plus-icon{
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: -2px;
+    margin-right: 4px;
+}
+.add__btn{
+    position: absolute;
+    right: 24px;
+    a{
+        color: #fff;
+    }
+}
